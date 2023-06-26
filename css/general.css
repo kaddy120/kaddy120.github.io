@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+nav {
+  justify-content: space-between;
+  /* background: gray; */
+  padding: 10px;
+}
+
+body {
+  background: #111c32;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-item {
+  color: #dcfffe;
+  font-size: 20px;
+  font-family: Fira Mono;
+}
+
+li {
+  list-style-type: none;
+  height: 100%;
+  color: #dcfffe;
+}
+
+a {
+  text-decoration: none;
+  /* padding: 10%; */
+}
+.name {
+  color: #dcfffe;
+  font-size: 72px;
+  font-family: Poppins;
+  font-weight: 500;
+  /* margin-top: 5px; */
+}
+
+.greetings {
+  color: #dffaf9;
+  font-size: 24px;
+  font-family: Fira Mono;
+}
+
+.profile {
+  color: rgba(220, 255, 254, 0.65);
+  font-size: 34px;
+  font-family: Poppins;
+  font-weight: 700;
+  max-width: 600px;
+  margin-top: 10px;
+}
+
+.p-statement {
+  color: #dcfffe;
+  font-size: 22px;
+  font-family: Poppins;
+  margin-bottom: 60px;
+}
+
+section {
+  margin-top: 25px;
+  padding: 10px;
+}
+
+.log {
+  display: flex;
+  flex-direction: column;
+  /* padding: 20px; */
+  font-size: 24px;
+  font-family: Poppins;
+  font-weight: 700;
+}
+.kaddy {
+  color: #f96a68;
+}
+.marindi {
+  color: #dcfffe;
+}
+
+/* util styles  */
+
+.flex {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+nav .flex {
+  justify-content: space-between;
+}
+
+.nav-item,
+.home {
+  padding: 10px;
+}
+
+.intro {
+  display: flex;
+  justify-content: space-between;
+  height: 400px;
+}
+
+.left {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+article {
+  flex: 1;
+}
+
+.img-container {
+  /* align-items: center; */
+  /* height: 70%; */
+  /* max-width: 200px; */
+  /* position: relative; */
+	/* height: 70%; */
+	/* width: 70px; */
+  background: gray;
+}
+
+.blue {
+  width: 368.615px;
+  height: 350.433px;
+  background: #2f7a97;
+  position: absolute;
+  top: 0px;
+}
+
+
+.orange {
+  width: 140px;
+  height: 100px;
+  background: #f96a68;
+  position: absolute;
+  bottom:  -20px;
+  right: -20px;
+}
+
+.primary-bt {
+ border:  #f96a68 solid 1px;
+ border-radius: 3px;
+ padding: 10px 15px;
+  color: #f96a68;
+  background: transparent;
+  font-family: Fira Mono;
+  font-size: 22px;
+  margin-bottom: 60px;
+}
+
+.skills {
+background: var(--light-primary, #DCFFFE);
+height: 500px;
+}
+img {
+  height: 100%;
+  z-index: 100;
+  position: relative;
+  /* position: absolute; */
+  /* width: 100%; */
+}
