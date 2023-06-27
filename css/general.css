@@ -45,16 +45,42 @@ body {
   font-family: Fira Mono;
 }
 
+.view-project{
+display: flex;
+margin-top: 20px;
+}
+
+.view {
+  color: #dcfffe;
+  /* color: rgba(220, 255, 254, 0.65); */
+  font-size: 14px;
+  margin: 0 8px;
+  font-family: Poppins;
+}
+.view:hover {
+  /* color: #dcfffe; */
+  color: rgba(220, 255, 254, 0.65);
+  /* font-size: 14px; */
+  /* margin: 0 8px; */
+  /* font-family: Poppins; */
+}
+
 .icons{
   color: #dcfffe;
   font-size: 22px;
   margin: 0 8px
 }
 
+.icons:hover {
+  /* font-size: 24px; */
+  color: rgba(220, 255, 254, 0.65);
+}
+
 .nav-item:hover {
   /* font-size: 24px; */
-  border: 1px solid #dcfffe;
-  border-radius: 6px;
+  /* border: 1px solid #dcfffe; */
+  /* border-radius: 6px; */
+  color: rgba(220, 255, 254, 0.65);
 }
 
 .nav-item:active {
@@ -101,7 +127,7 @@ a {
 
 .p-statement {
   color: #dcfffe;
-  font-size: 22px;
+  font-size: 20px;
   font-family: Poppins;
   margin-bottom: 60px;
 }
@@ -217,10 +243,14 @@ nav > * {
   right: -35px;
 }
 
-.social-icon {
-  height: 24px;
-  fill: #dcfffe;
-}
+/* .icons { */
+/*   height: 24px; */
+/*   fill: #dcfffe; */
+/* } */
+
+/* .icons:hover { */
+/*   height: 26px; */
+/* } */
 
 .primary-bt {
   border: 1px solid #f96a68;
@@ -292,7 +322,8 @@ nav > * {
 .p-details {
   background-color: #1D325A;
   width: 600px;
-  padding: 20px; 
+  padding: 20px;
+  /* padding: 20px 10px 10px 10px;  */
   /* border-radius: 9px 0 0 9px; */
 }
 
@@ -312,7 +343,7 @@ h3 {
 
 .tech-stack {
   color: #def7fd;
-  font-size: 18px;
+  font-size: 16px;
   font-family: Fira Mono;
   margin: 26px 0px 40px 0px;
 }
