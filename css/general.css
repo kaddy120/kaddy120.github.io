@@ -1,3 +1,7 @@
+/* :root { */
+/* --pr */
+/* } */
+
 * {
   box-sizing: border-box;
   padding: 0px;
@@ -10,10 +14,16 @@
   box-sizing: border-box;
 }
 
+
 nav {
+  display: flex;
   justify-content: space-between;
-  /* background: gray; */
+  background: #111c32;
   padding: 10px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
 }
 
 body {
@@ -210,6 +220,11 @@ img {
   /* width: 100%; */
 }
 
+.card-img {
+  height: 100%;
+  object-fit: cover;
+}
+
 nav > * {
   padding: 0 20px;
 }
@@ -263,15 +278,22 @@ nav > * {
 
 .skills {
   background: var(--light-primary, #dcfffe);
-  height: 1000px;
+  height: 850px;
   color: black;
+}
+
+.skill {
+  color: #111c32;
+  font-family: Fira Mono;
+  font-size: 16px;
+  list-style-type: disc;
 }
 
 .skill-title {
   background: #CFF5F4;
-  font-size: 28px;
-  font-weight: 300;
-  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 12px;
   /* height: 100vp; */
   color: black;
 
@@ -301,10 +323,6 @@ nav > * {
   box-shadow: 0px 2px 5px 1px #2f7a97;
 }
 
-.skill {
-  color: #111c32;
-  font-family: Fira Mono;
-}
 
 .section-title {
   font-size: 48px;
@@ -356,9 +374,9 @@ h3 {
 
 .p-details h3 {
   color: #def7fd;
-  font-size: 24px;
+  font-size: 20px;
   font-family: Poppins;
-  font-weight: 400;
+  font-weight: 600;
 }
 .tech-stack {
   color: #def7fd;
@@ -432,4 +450,10 @@ h3 {
   background: #f96a68;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
     0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+.about {
+  margin-top: 90px; 
+  padding-top: 40px;
 }
