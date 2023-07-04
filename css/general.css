@@ -2,18 +2,28 @@
 /* --pr */
 /* } */
 
-* {
-  box-sizing: border-box;
-  padding: 0px;
-  margin: 0px;
-}
+/* || General styles */
 
 *,
 *:before,
 *:after {
   box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
 }
 
+
+
+body {
+  background: #111c32;
+}
+
+h3 {
+  color: #def7fd;
+  font-size: 38px;
+  font-family: Poppins;
+  font-weight: 400;
+}
 
 nav {
   display: flex;
@@ -26,9 +36,31 @@ nav {
   z-index: 1000;
 }
 
-body {
-  background: #111c32;
+nav > * {
+  padding: 0 20px;
 }
+
+li {
+  list-style-type: none;
+  height: 100%;
+  color: #dcfffe;
+}
+
+a {
+  text-decoration: none;
+  /* padding: 10%; */
+}
+
+img {
+  z-index: 100;
+  position: relative;
+  max-width: 100%;
+  border-radius: 3px 0px 3px 0px;
+  /* position: absolute; */
+  /* width: 100%; */
+}
+
+
 
 .container {
   max-width: 1100px;
@@ -38,7 +70,7 @@ body {
 .p-card-container {
   display: flex;
   margin-bottom: 70px;
-  height: 300px;
+  /* height: 300px; */
   /* margin-top: 100px; */
 }
 .p-card-container:nth-child(odd) {
@@ -97,16 +129,6 @@ body {
   color: #dcfffe;
 }
 
-li {
-  list-style-type: none;
-  height: 100%;
-  color: #dcfffe;
-}
-
-a {
-  text-decoration: none;
-  /* padding: 10%; */
-}
 .name {
   color: #dcfffe;
   font-size: 72px;
@@ -165,6 +187,13 @@ section {
   justify-content: center;
 }
 
+
+/* || Typography */
+
+/* … */
+
+/* || Header and Main Navigation */
+
 nav .flex {
   justify-content: space-between;
 }
@@ -174,6 +203,7 @@ nav .flex {
   padding: 10px;
 }
 
+/* … */
 .intro {
   display: grid;
   grid-template-rows: 1fr;
@@ -207,23 +237,12 @@ article {
   /* align-self: center; */
 }
 
-img {
-  z-index: 100;
-  position: relative;
-  max-width: 100%;
-  border-radius: 3px 0px 3px 0px;
-  /* position: absolute; */
-  /* width: 100%; */
-}
 
 .card-img {
   height: 100%;
   object-fit: cover;
 }
 
-nav > * {
-  padding: 0 20px;
-}
 
 .cursor {
   /* width: 5px; */
@@ -251,8 +270,6 @@ nav > * {
   bottom: 10px;
   right: -35px;
 }
-
-
 
 /* .icons { */
 /*   height: 24px; */
@@ -340,7 +357,7 @@ nav > * {
 .p-card {
   display: flex;
   border-radius: 9px;
-  overflow: hidden;
+  /* overflow: hidden; */
   box-shadow: 0px 2px 15px black;
   /* max-width: 1000px; */
 }
@@ -353,8 +370,10 @@ nav > * {
   background-color: #1d325a;
   width: 600px;
   padding: 20px;
-  /* padding: 20px 10px 10px 10px;  */
-  /* border-radius: 9px 0 0 9px; */
+}
+
+.p-details > p {
+  height: 160px;
 }
 
 .p-image {
@@ -363,12 +382,6 @@ nav > * {
   /* border-radius: 0 9px 9px 0; */
 }
 
-h3 {
-  color: #def7fd;
-  font-size: 38px;
-  font-family: Poppins;
-  font-weight: 400;
-}
 
 .p-details h3 {
   color: #def7fd;
