@@ -3,69 +3,82 @@
 
 <head>
   <title>Kaddy Marindi</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="css/style.css" rel="stylesheet">
-  <link href="css/general.css" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Fira Mono' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/general.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Fira Mono" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-  <nav>
-      <p class="log">
-        <span class="kaddy">Kaddy</span>
-        <span class="marindi">Marindi</span>
-      </p>
-
-      <ul class="flex">
-        <!-- <li><a class="nav-item" href="#about">about</a></li> -->
-        <li><a class="nav-item" href="#skills">skills</a></li>
-        <li><a class="nav-item" href="#projects">projects</a></li>
-        <li><a class="nav-item" href="assets/RusselResume.pdf" target="_blank" rel="noopener noreferrer">resume</a>
+  <header>
+    <div class="log">
+      <h4 class="log_kaddy">Kaddy</h4>
+      <h4 class="log_marindi">Marindi</h4>
+    </div>
+    <!-- <nav> -->
+      <ul class="nav nav-flex">
+        <li><a class="nav-item" href="#skills">Skills</a></li>
+        <li><a class="nav-item" href="#projects">Projects</a></li>
+        <li>
+          <a class="nav-item" href="assets/RusselResume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
         </li>
-        <li><a class="nav-item" href="https://kaddy.hashnode.dev/">blog</a></li>
-        <!-- <li><a class="nav-item" href="#contact">contact</a></li> -->
-        <ul class="socials flex">
-          <li><a class="icons" href="https://github.com/kaddy120" target="_blank" rel="noopener noreferrer">
-              <i class="fa-brands fa-square-github"></i>
-            </a></li>
-          <li><a class="icons" href="https://www.linkedin.com/in/kaddy-marindi" target="_blank"
-              rel="noopener noreferrer">
-              <i class="fa-brands fa-linkedin-in"></i>
-            </a></li>
-          <!-- <li><a class="icons" href="https://kaddy.hashnode.dev/"> -->
-          <!--     <i class="fa-regular fa-envelope"></i> -->
-          <!--   </a></li> -->
-        </ul>
-  </nav>
+        <li>
+          <a class="nav-item" href="https://kaddy.hashnode.dev/">Blog</a>
+        </li>
+        <li>
+          <ul class="nav-item_socials nav-flex">
+            <li>
+              <a class="icon" href="https://github.com/kaddy120" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github-square"></i>
+              </a>
+            </li>
+            <li>
+              <a class="icon" href="https://www.linkedin.com/in/kaddy-marindi" target="_blank"
+                rel="noopener noreferrer">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    <!-- </nav> -->
+  </header>
 
   <section class="about">
     <div class="container">
-      <div class="intro">
-        <div class="left">
-          <p class="greetings">$ Hi there, my name is <span class="cursor">|</span></p>
-          <h2 class="name">Kaddy Marindi</h4>
-            <h4 class="profile">A junior software engineer with an Electrical Engineering background.</h4>
+      <div class="about-container">
+        <div class="profile-bio">
+          <p class="profile-greetings">
+            > Hi there!! I am <span class="profile-grettings_cursor">|</span>
+          </p>
+          <h1 class="profile-tagline">
+            <span class="profile-name">Kaddy Marindi.</span> A junior software
+            engineer with an Electrical Engineering background.
+          </h1>
         </div>
-        <div class="right">
-          <div class="img-container">
+
+        <div class="profile-pic">
+          <div class="profile-pic-container">
             <div class="blue"></div>
             <div class="orange"></div>
-            <img src="./use for portfolio.png" alt="my image">
+            <img src="./use for portfolio.png" alt="my image" />
           </div>
         </div>
       </div>
-      <p class="p-statement">
-        I'm a junior software developer with a background in Electrical engineering. I have passion for distributed
-        systems, linux administration, and computers. I find it setisfying to tinker and optimise my development
-        environment. In addition, I'm learning to write well. You can find some of my technical writing at my blog.
+
+      <p class="about-statement">
+        I like Linux, programming, and computer stuff. I find it setisfying to
+        tinker and optimise my development environment. I'm learning to write
+        well; Find some of my technical writing at my blog.
       </p>
       <a href="assets/RusselResume.pdf" download>
-        <button class="primary-bt" type="button">My resume <i class="fa-sharp fa-regular fa-folder-arrow-down"></i>
+        <button class="primary-bt" type="button">
+          My resume <i class="fa-sharp fa-regular fa-folder-arrow-down"></i>
         </button>
       </a>
     </div>
@@ -73,12 +86,13 @@
 
   <section class="skills">
     <div class="container">
-      <p id="skills" class="section-title">Skills</p>
+      <h1 id="skills" class="section-title">Skills</h1>
+
       <div class="skills-container">
         <!-- To-do: Use the logs for the technologies -->
         <!-- web skills  -->
         <div class="skill-card">
-          <h3 class="skill-title">Web Development</h3>
+          <h3 class="card-title skills-title">Web Development</h3>
           <ul>
             <li class="skill">CSS3</li>
             <li class="skill">SaaS</li>
@@ -95,10 +109,9 @@
         <!-- To-do: Use the logs for the technologies -->
         <!-- system stuff -->
         <div class="skill-card">
-          <h3 class="skill-title">System programming</h3>
+          <h3 class="card-title skills-title">System programming</h3>
           <ul>
             <li class="skill">C/C++</li>
-            <!-- <li class="skill">Rust</li> -->
             <li class="skill">Linux system programming</li>
             <li class="skill">Computer networks</li>
           </ul>
@@ -106,7 +119,7 @@
         <!-- To-do: Use the logs for the technologies -->
         <!-- tools  -->
         <div class="skill-card">
-          <h3 class="skill-title">Dev Tools</h3>
+          <h3 class="card-title skills-title">Dev Tools</h3>
           <ul>
             <li class="skill">Unix/linux</li>
             <li class="skill">Bash</li>
@@ -117,7 +130,7 @@
         </div>
 
         <div class="skill-card">
-          <h3 class="skill-title">Programming Concepts</h3>
+          <h3 class="card-title skills-title">Programming Concepts</h3>
           <ul>
             <li class="skill">OOP</li>
             <li class="skill">Data structure & Algo</li>
@@ -129,17 +142,17 @@
         </div>
       </div>
       <div class="decorate">
-        <div class="blue-first"></div>
-        <div class="blue-second"></div>
-        <div class="blue-big"></div>
-        <div class="orange-big"></div>
+        <div class="decorate_blue-first"></div>
+        <div class="decorate_blue-second"></div>
+        <div class="decorate_blue-big"></div>
+        <div class="decorate_orange-big"></div>
       </div>
     </div>
   </section>
 
   <section id="projects">
     <div class="container">
-      <p id="projects" class="section-title">projects</p>
+      <h1 id="projects" class="section-title">projects</h1>
       <!-- <div class="p-card-container"> -->
       <!--   <div class="p-card"> -->
       <!--     <div class="p-details"> -->
@@ -177,7 +190,7 @@
       <div class="p-card-container">
         <div class="p-card reverse">
           <div class="p-details">
-            <h3> Parallel NEC2++</h3>
+            <h3>Parallel NEC2++</h3>
             <ul class="tech-stack">
               <li>C++</li>
               <li>MPI</li>
@@ -185,10 +198,19 @@
               <li>BLAS</li>
               <li>Make</li>
             </ul>
-            <p>This project parallelizes the Electromagnetic Numerical Code (NEC) to boost computational performance. By leveraging a hybrid approach with OpenMP and MPI libraries, the NEC2++ code is optimized for shared and distributed memory parallelization. The computationally intensive operations -- namely, matrix filling, LU decomposition, and matrix solution solve -- are analyzed and parallelized. Notably, an eight-node implementation yields a 4 times performance gain. TK call to action.</p> <ul class="view-project"> <li>
-                <a class="view" href="assets/lab-project.pdf">
-                  Paper
-                </a>
+            <p>
+              This project parallelizes the Electromagnetic Numerical Code
+              (NEC) to boost computational performance. By leveraging a hybrid
+              approach with OpenMP and MPI libraries, the NEC2++ code is
+              optimized for shared and distributed memory parallelization. The
+              computationally intensive operations -- namely, matrix filling,
+              LU decomposition, and matrix solution solve -- are analyzed and
+              parallelized. Notably, an eight-node implementation yields a 4
+              times performance gain. TK call to action.
+            </p>
+            <ul class="view-project">
+              <li>
+                <a class="view" href="assets/lab-project.pdf"> Paper </a>
               </li>
               <li class="view">
                 <a clas="view" href="">GitHub</a>
@@ -196,7 +218,7 @@
             </ul>
           </div>
           <div class="p-image">
-            <img class="card-img" src="./assets/dt2-racks-from-front.jpg" alt="">
+            <img class="card-img" src="./assets/dt2-racks-from-front.jpg" alt="" />
           </div>
         </div>
       </div>
@@ -208,18 +230,24 @@
             <ul class="tech-stack">
               <li>Python</li>
             </ul>
-            <p> This project aims to identify two significant tipping points in the COVID-19 pandemic: (1) the (re-)emergence of wave outbreaks and (2) the strain on hospital capacity. By utilizing early warning signals (EWS) and analyzing real-time data from Italy and South Africa, effective indicators have been discovered. Additionally, the SEI[H]RD compartmental model allows for a comprehensive evaluation of hospital capacity, considering regular beds, ICU beds, and ventilator beds. TK call for action.</p>
+            <p>
+              This project aims to identify two significant tipping points in
+              the COVID-19 pandemic: (1) the (re-)emergence of wave outbreaks
+              and (2) the strain on hospital capacity. By utilizing early
+              warning signals (EWS) and analyzing real-time data from Italy
+              and South Africa, effective indicators have been discovered.
+              Additionally, the SEI[H]RD compartmental model allows for a
+              comprehensive evaluation of hospital capacity, considering
+              regular beds, ICU beds, and ventilator beds. TK call for action.
+            </p>
             <ul class="view-project">
               <li>
-                <a class="view" href="assets/codiv-19.pdf">
-                  Paper
-                </a>
+                <a class="view" href="assets/codiv-19.pdf"> Paper </a>
               </li>
             </ul>
-
           </div>
           <div class="p-image">
-            <img class="card-img" src="./assets/covid-19.jpg" alt="">
+            <img class="card-img" src="./assets/covid-19.jpg" alt="" />
           </div>
         </div>
       </div>
@@ -233,12 +261,15 @@
               <li>SFML</li>
               <li>doctest</li>
             </ul>
-            <p>Super-game is written in c++17 and uses SFML v2.5.1. The game codebase is modularized into three layers: presentation, data and logic layer. SFML is only used for graphics, the game
-              logic classes do not use
-              any SFML. All game objects are modeled as entities. The game
-              solution achieved basic
-              functionality and two major features. Scores. The solution presented is tested using Doctest framework to verify
-              the accuracy of the solution</p>
+            <p>
+              Super-game is written in c++17 and uses SFML v2.5.1. The game
+              codebase is modularized into three layers: presentation, data
+              and logic layer. SFML is only used for graphics, the game logic
+              classes do not use any SFML. All game objects are modeled as
+              entities. The game solution achieved basic functionality and two
+              major features. Scores. The solution presented is tested using
+              Doctest framework to verify the accuracy of the solution
+            </p>
             <ul class="view-project">
               <li class="view">
                 <a class="view" href="https://github.com/kaddy120/Super-Pac-Man-game">GitHub</a>
@@ -247,7 +278,7 @@
           </div>
           <div class="p-image">
             <!-- <img src="" alt=""> -->
-            <iframe height=100% src="https://www.youtube.com/embed/JrmWflmov2U" title="YouTube video player"
+            <iframe height="100%" src="https://www.youtube.com/embed/JrmWflmov2U" title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen></iframe>
