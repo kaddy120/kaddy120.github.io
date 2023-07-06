@@ -66,8 +66,14 @@ header {
 
 .nav-flex {
   display: flex;
+  justify-content: space-between;
 }
 
+.nav-item_socials{
+  /* background: gray; */
+  min-width: 50px;
+
+}
 .log {
 }
 
@@ -169,8 +175,11 @@ img {
   color: --var(--light-hover-c);
 }
 
-.icons {
+.icon i {
   color: var(--light-primary-c);
+}
+
+.icons {
   font-size: 22px;
   margin: 0 8px;
 }
