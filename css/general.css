@@ -50,7 +50,7 @@ h5 {
 }
 
 h6 {
-  font-size: 22px;
+  /* font-size: 22px; */
 }
 
 header {
@@ -64,15 +64,24 @@ header {
   padding: 10px 40px;
 }
 
+footer {
+  border-top: 1px solid rgba(220, 255, 254, 0.2);
+  color: var(--light-hover-c);
+  font-size: 14px;
+}
+
+footer .container {
+  padding: 15px 0;
+}
+
 .nav-flex {
   display: flex;
   justify-content: space-between;
 }
 
-.nav-item_socials{
+.nav-item_socials {
   /* background: gray; */
   min-width: 50px;
-
 }
 .log {
 }
@@ -135,8 +144,11 @@ img {
 
 .container {
   max-width: 1100px;
-  padding: 30px;
   margin: 0 auto;
+}
+
+section .container {
+  padding: 30px;
 }
 
 .p-card-container {
@@ -341,7 +353,7 @@ section {
   /*   margin-left: 80px; */
   /*   margin-right: 80px; */
   /* } */
-  
+
   .decorate {
     display: none;
   }
@@ -351,7 +363,6 @@ section {
   .p-image {
     display: none;
   }
-
 }
 
 .skill {
@@ -404,7 +415,7 @@ section {
 .p-card {
   display: flex;
   border-radius: 9px;
-  /* overflow: hidden; */
+  overflow: hidden;
   box-shadow: 0px 2px 15px black;
   /* max-width: 1000px; */
 }
@@ -414,7 +425,8 @@ section {
 }
 
 .p-details {
-  background-color: #1d325a;
+  /* background-color: #1d325a; */
+  background-color: #1d2a43;
   max-width: 700px;
   flex-shrink: 4;
   padding: 20px;
@@ -511,4 +523,30 @@ section {
 .about {
   margin-top: 90px;
   padding-top: 40px;
+}
+
+.blogs{
+  min-height: 600px;
+}
+
+.blogs .container {
+  margin-top: 80px;
+}
+
+.blogs-list_item {
+  list-style-type: none;
+  margin-bottom: 60px;
+}
+.blogs-list_item > * {
+  margin-bottom: 12px;
+}
+
+.blogs a {
+  color: var(--orange-c);
+}
+
+.date{
+  color: var(--light-hover-c);
+  font-size: 16px;
+  font-family: Fira Mono;
 }
