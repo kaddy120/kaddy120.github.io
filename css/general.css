@@ -62,6 +62,7 @@ header {
   position: fixed;
   z-index: 100;
   padding: 10px 40px;
+  /* border-bottom: 1px solid rgba(220, 255, 254, 0.2); */
 }
 
 footer {
@@ -132,7 +133,10 @@ li {
 
 a {
   text-decoration: none;
-  /* padding: 10%; */
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 img {
@@ -521,11 +525,11 @@ section {
 }
 
 .about {
-  margin-top: 90px;
+  margin-top: 60px;
   padding-top: 40px;
 }
 
-.blogs{
+.blogs {
   min-height: 600px;
 }
 
@@ -537,15 +541,18 @@ section {
   list-style-type: none;
   margin-bottom: 60px;
 }
-.blogs-list_item > * {
-  margin-bottom: 12px;
+
+.blogs-list_item h3 {
+  margin-top: 8px;
+  margin-bottom: 10px;
 }
 
 .blogs a {
   color: var(--orange-c);
 }
 
-.date{
+
+.date {
   color: var(--light-hover-c);
   font-size: 16px;
   font-family: Fira Mono;

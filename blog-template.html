@@ -5,7 +5,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="css/prism.css" rel="stylesheet" />
-    <link href="css/github-markdown-dark.css" rel="stylesheet" />
+    <link href="css/github-markdown.css" rel="stylesheet" />
+    <link href="css/general.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
       .markdown-body {
@@ -18,7 +30,7 @@
 
       @media (prefers-color-scheme: dark) {
         body {
-          background-color:#111c32; 
+          background-color: #111c32;
         }
       }
 
@@ -31,7 +43,51 @@
   </head>
 
   <body>
-    <script src="prism.js"></script>
+    <header>
+      <div class="log">
+        <h4 class="log_kaddy">Kaddy's</h4>
+        <h4 class="log_marindi">Blog</h4>
+      </div>
+      <!-- <nav> -->
+      <ul class="nav nav-flex">
+        <li><a class="nav-item" href="/">About</a></li>
+        <li>
+          <a
+            class="nav-item"
+            href="assets/RusselResume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Resume</a
+          >
+        </li>
+        <li>
+          <ul class="nav-item_socials nav-flex">
+            <li>
+              <a
+                class="icon"
+                href="https://github.com/kaddy120"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-github-square"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                class="icon"
+                href="https://www.linkedin.com/in/kaddy-marindi"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <!-- </nav> -->
+    </header>
     <article class="markdown-body">$body$</article>
+    <script src="prism.js"></script>
   </body>
 </html>

@@ -6,6 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="css/prism.css" rel="stylesheet" />
     <link href="css/github-markdown.css" rel="stylesheet" />
+    <link href="css/general.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
       .markdown-body {
@@ -15,11 +27,13 @@
         margin: 0 auto;
         padding: 45px;
       }
+
       @media (prefers-color-scheme: dark) {
-				body {
-          background-color:#111c32; 
-				}
-			}
+        body {
+          background-color: #111c32;
+        }
+      }
+
       @media (max-width: 767px) {
         .markdown-body {
           padding: 15px;
@@ -29,8 +43,52 @@
   </head>
 
   <body>
-    <script src="prism.js"></script>
+    <header>
+      <div class="log">
+        <h4 class="log_kaddy">Kaddy's</h4>
+        <h4 class="log_marindi">Blog</h4>
+      </div>
+      <!-- <nav> -->
+      <ul class="nav nav-flex">
+        <li><a class="nav-item" href="/">About</a></li>
+        <li>
+          <a
+            class="nav-item"
+            href="assets/RusselResume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Resume</a
+          >
+        </li>
+        <li>
+          <ul class="nav-item_socials nav-flex">
+            <li>
+              <a
+                class="icon"
+                href="https://github.com/kaddy120"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-github-square"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                class="icon"
+                href="https://www.linkedin.com/in/kaddy-marindi"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <!-- </nav> -->
+    </header>
     <article class="markdown-body"><h1 id="key-mapping-in-linux-for-proficient-typing">Key mapping in Linux for proficient typing.</h1>
+<p><span style="color: #999999;">08 Jul, 2023 - Kaddy Marindi</span></p>
 <p>For heavy computer users, a keyboard is often a primary interface for interacting with the system when typing, navigating, and using shortcuts. Some of the most frequently used keys such as Esc, Ctrl, and arrow keys are far from the home row keys. We have to overextend our fingers to press them; consequently, causing errors that can disrupt the typing flow and reduce productivity.</p>
 <p>In this article, I'll show you how to remap Esc, Ctrl and arrows keys in Linux, X windows systems, to easily accessible locations on the keyboard using two tools: <code>xmodmap</code> and <code>xcape</code>. If you are getting confused when following along, refer to my <code>xmodmap</code> configuration on <a href="https://github.com/kaddy120/dotfile/blob/master/.xmodmap">GitHub</a>, which most part of this article is base on.</p>
 <h2 id="understanding-xmodmap-key-mapping-concepts">Understanding xmodmap key mapping concepts</h2>
@@ -44,11 +102,7 @@
 <h3 id="modifiers">Modifiers</h3>
 <p><code>modifiers</code> are keyboard keys that are often used in conjunction with other keys, and do not produce any visual character when pressed alone. Some of the common modifiers include Shift, Ctrl, Alt, Super (Windows) keys, Esc, and CapsLock. When a modifier is pressed with another key, it produces non-default behavior. For instance, <code>Shift+1</code> produces <code>!</code> , <code>Shift+a</code> produces <code>A</code>. <code>Modifiers</code> are handy for application shortcuts.</p>
 <p>To print out the standard modifier table in your system, run the following command:</p>
-<pre><code class="language-js"> 
-  var kaddy = Tebogo;
-  function kaddy(tebogo){
-    return false;
-  }
+<pre class="bash"><code> $ xmodmap -pk
 </code></pre>
 <p>The output looks like the following:</p>
 <pre><code>xmodmap:  up to 3 keys per modifier, (keycodes in parentheses):
@@ -321,5 +375,6 @@ exec_always --no-startup-id xcape -e &#39;Mode_Switch=Escape&#39;
 <h3 id="reference">Reference</h3>
 <p><a href="https://wiki.archlinux.org/title/autostarting">https://wiki.archlinux.org/title/autostarting</a> <a href="https://en.wikipedia.org/wiki/Modifier_key">https://en.wikipedia.org/wiki/Modifier_key</a></p>
 <h2 id="section"></h2></article>
+    <script src="prism.js"></script>
   </body>
 </html>
