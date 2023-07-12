@@ -68,11 +68,44 @@ header {
 footer {
   border-top: 1px solid rgba(220, 255, 254, 0.2);
   color: var(--light-hover-c);
-  font-size: 14px;
+  font-size: 16px;
 }
 
 footer .container {
-  padding: 15px 0;
+  /* padding: 15px 0; */
+  padding: 0 30px;
+}
+
+footer h4 {
+  color: var(--light-primary-c);
+  margin-bottom: 8px;
+}
+
+
+.footer_flex {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.footer_flex > * {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.footer-blog-tagline{
+  /* display: flex; */
+  /* justify-content: center; */
+
+}
+
+ul {
+  list-style-type: none;
+}
+
+footer a {
+  color: var(--light-hover-c);
 }
 
 .nav-flex {
