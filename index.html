@@ -16,35 +16,38 @@
 
 <body>
   <header>
-    <div class="log">
-      <h4 class="log_kaddy">Kaddy</h4>
-      <h4 class="log_marindi">Marindi</h4>
+    <div class="container">
+      <div class="log">
+        <h4 class="log_kaddy">Kaddy</h4>
+        <h4 class="log_marindi">Marindi</h4>
+      </div>
+      <!-- <nav> -->
+      <ul class="nav nav-flex">
+        <li><a class="nav-item" href="#skills">Skills</a></li>
+        <li><a class="nav-item" href="#projects">Projects</a></li>
+        <li>
+          <a class="nav-item" href="assets/RusselResume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+        </li>
+        <li>
+          <a class="nav-item" href="/blog.html">Blog</a>
+        </li>
+        <li>
+          <ul class="nav-item_socials nav-flex">
+            <li>
+              <a class="icon" href="https://github.com/kaddy120" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github-square"></i>
+              </a>
+            </li>
+            <li>
+              <a class="icon" href="https://www.linkedin.com/in/kaddy-marindi" target="_blank"
+                rel="noopener noreferrer">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
     </div>
-    <!-- <nav> -->
-    <ul class="nav nav-flex">
-      <li><a class="nav-item" href="#skills">Skills</a></li>
-      <li><a class="nav-item" href="#projects">Projects</a></li>
-      <li>
-        <a class="nav-item" href="assets/RusselResume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
-      </li>
-      <li>
-        <a class="nav-item" href="/blog.html">Blog</a>
-      </li>
-      <li>
-        <ul class="nav-item_socials nav-flex">
-          <li>
-            <a class="icon" href="https://github.com/kaddy120" target="_blank" rel="noopener noreferrer">
-              <i class="fab fa-github-square"></i>
-            </a>
-          </li>
-          <li>
-            <a class="icon" href="https://www.linkedin.com/in/kaddy-marindi" target="_blank" rel="noopener noreferrer">
-              <i class="fab fa-linkedin"></i>
-            </a>
-          </li>
-        </ul>
-      </li>
-    </ul>
     <!-- </nav> -->
   </header>
 
@@ -53,12 +56,12 @@
       <div class="about-container">
         <div class="profile-bio">
           <p class="profile-greetings">
-            > Hi there!! I am <span class="profile-grettings_cursor">|</span>
+          $ Hi there!! I am <span class="profile-grettings_cursor">|</span>
           </p>
-          <h1 class="profile-tagline">
-            <span class="profile-name">Kaddy Marindi.</span> A junior software
-            engineer with an Electrical Engineering background.
-          </h1>
+          <div class="profile-tagline">
+            <h1 class="profile-name">Kaddy Marindi,</h1> 
+            <h1>a junior software engineer with an Electrical Engineering background.</h1> 
+          </div>
         </div>
 
         <div class="profile-pic">
@@ -85,7 +88,7 @@
 
   <section class="skills">
     <div class="container">
-      <h1 id="skills" class="section-title">Skills</h1>
+      <h2 id="skills" class="section-title">Skills</h2>
 
       <div class="skills-container">
         <!-- To-do: Use the logs for the technologies -->
@@ -151,7 +154,7 @@
 
   <section id="projects">
     <div class="container">
-      <h1 id="projects" class="section-title">projects</h1>
+      <h2 id="projects" class="section-title">projects</h2>
       <!-- <div class="p-card-container"> -->
       <!--   <div class="p-card"> -->
       <!--     <div class="p-details"> -->
@@ -253,7 +256,7 @@
         </div>
       </div>
 
-      <div class="p-card-container">
+      <div class="p-card-container" style="margin-bottom: 0;">
         <div class="p-card reverse">
           <div class="p-details">
             <h3 class="card-title">Super Pac-Man</h3>
@@ -328,4 +331,5 @@
     </div>
   </footer>
 </body>
+
 </html>
