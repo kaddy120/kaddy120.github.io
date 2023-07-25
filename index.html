@@ -40,7 +40,7 @@
             <i class="fa-solid fa-xmark closeIcon"></i>
           </button>
           <!-- <ul class="nav nav-flex"> -->
-          <ul id="nav-list" class="menu">
+          <ul id="nav-list" class="nav nav-flex menu">
             <li><a class="nav-item" href="#home">Home</a></li>
             <li><a class="nav-item" href="#about">About</a></li>
             <li><a class="nav-item" href="#projects">Projects</a></li>
@@ -86,7 +86,7 @@
 
     <section id="home" class="home">
       <div class="container">
-        <div class="about-container">
+        <div class="home-container">
           <div class="profile-bio">
             <p class="profile-greetings">
               $ Hi there, I'm <span class="profile-grettings_cursor">|</span>
@@ -96,27 +96,39 @@
               <h1>Junior software engineer</h1>
             </div>
             <p class="who">
-              A front end focused developer who loves building stuff. A front
-              end focused developer who loves building stuff.
+              N.B!!!: This site is still under construction. A front end focused
+              developer who loves building stuff.
             </p>
             <p class="location">
               <i class="fa-solid fa-location-dot"></i> South Africa, Limpopo
             </p>
           </div>
           <div class="profile-pic">
-            <div class="profile-pic-container">
+            <picture class="profile-pic-container">
               <div class="blue"></div>
               <div class="orange"></div>
-              <img src="./use for portfolio.png" alt="my image" />
-            </div>
+              <img
+                src="./use for portfolio.png"
+                alt="my profile picture in black and white."
+              />
+            </picture>
           </div>
         </div>
-        <a href="#projects" download>
-          <button class="primary-bt" type="button">
-            View Projects
-            <i class="fa-sharp fa-regular fa-folder-arrow-down"></i>
-          </button>
-        </a>
+        <div class="home-action-btns">
+          <a href="#projects" download>
+            <button class="primary-bt" type="button">
+              View Projects
+              <i class="fa-sharp fa-regular fa-folder-arrow-down"></i>
+            </button>
+          </a>
+          <a
+            class="nav-item secondary-bt"
+            href="assets/RusselResume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Resume</a
+          >
+        </div>
       </div>
     </section>
 
@@ -174,13 +186,6 @@
           <!-- To-do: Use the logs for the technologies -->
           <!-- web skills  -->
           <div class="skill-card">
-            <!-- <div> -->
-            <!--   <img -->
-            <!--     style="height: 34px" -->
-            <!--     src="assets/web-development-svgrepo-com.svg" -->
-            <!--     alt="" -->
-            <!--   /> -->
-            <!-- </div> -->
             <h3 class="card-title skills-title">Web Development</h3>
             <ul>
               <li class="skill">CSS3</li>
