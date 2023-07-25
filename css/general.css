@@ -18,6 +18,15 @@
   --lgth-4: 2rem; /* 32px */
   --lgth-5: 4rem; /* 64px */
   --lgth-6: 8rem; /* 128px */
+
+  --step--2: clamp(0.69rem, calc(0.66rem + 0.18vw), 0.80rem);
+  --step--1: clamp(0.83rem, calc(0.78rem + 0.29vw), 1.00rem);
+  --step-0: clamp(1.00rem, calc(0.91rem + 0.43vw), 1.25rem);
+  --step-1: clamp(1.20rem, calc(1.07rem + 0.63vw), 1.56rem);
+  --step-2: clamp(1.44rem, calc(1.26rem + 0.89vw), 1.95rem);
+  --step-3: clamp(1.73rem, calc(1.48rem + 1.24vw), 2.44rem);
+  --step-4: clamp(2.07rem, calc(1.73rem + 1.70vw), 3.05rem);
+  --step-5: clamp(2.49rem, calc(2.03rem + 2.31vw), 3.82rem);
 }
 
 /* || General styles */
@@ -62,28 +71,40 @@ img {
 /* || Typography */
 
 h1 {
-  font-weight: 600;
+  font-weight: 300;
+  font-size: var(--step-5);
+  letter-spacing: -1.5px;
   line-height: 1.3;
 }
 
 h2 {
+  font-weight: 300;
+  font-size: var(--step-4);
 }
 
 h3 {
-  font-weight: bold;
+  font-size: var(--step-3);
+  font-weight: 600;
   line-height: 1.2;
 }
 
 h4 {
+  font-size: var(--step-2);
   /* font-size: 28px; */
 }
 
 h5 {
+  font-size: var(--step-1);
   /* font-size: px; */
 }
 
 h6 {
+  font-size: var(--step-0);
   /* font-size: 22px; */
+}
+
+p{ 
+  font-size: var(--step-0);
 }
 
 .title {
@@ -269,7 +290,7 @@ hr {
   }
 }
 
-@media (min-width: 400px){
+@media (min-width: 400px) {
   .container {
     padding-inline: 16px;
   }
