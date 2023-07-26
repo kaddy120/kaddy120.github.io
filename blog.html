@@ -1,21 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Fira Mono"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="css/general.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
 
-<head>
-  <title></title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href="https://fonts.googleapis.com/css?family=Fira Mono" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="css/general.css" rel="stylesheet" />
-  <link href="css/style.css" rel="stylesheet" />
-</head>
-
-<body>
- <header>
+  <body>
+    <header>
       <div class="container">
         <div class="log">
           <h6 class="log_kaddy">Kaddy</h6>
@@ -32,11 +41,10 @@
           <!-- <ul class="nav nav-flex"> -->
           <ul id="nav-list" class="nav nav-flex menu">
             <li><a class="nav-item" href="/#home">Home</a></li>
-            <li><a class="nav-item" href="/#about">About</a></li>
-            <li><a class="nav-item" href="/#projects">Projects</a></li>
             <li>
               <a class="nav-item" href="/blog.html">Blog</a>
             </li>
+            <li><a class="nav-item" href="/bookmarks">Bookmarks</a></li>
             <li class="nav_item-resume">
               <a
                 class="nav-item secondary-bt btn"
@@ -72,47 +80,69 @@
         </nav>
       </div>
       <!-- </nav> -->
-    </header> 
+    </header>
 
-  <section class="blogs">
-    <div class="container">
-      <h4 class="title">Blog posts</h4>
-      <ul class="blogs-list">
-        <li class="blogs-list_item">
-          <p class="date">Jul 08, 2023</p>
-          <h5 class="card-title"><a href="/output.html">Blog title in full...it can be as long as you want</a></h5>
-          <div class="blogs-list_item_description">
-            <p class="body-2">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
-              deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non
-              provident, similique sunt in cu.</p>
-          </div>
-        </li>
+    <section class="blog-intro">
+      <div class="container">
+        <article>
+          <h1 class="blog-title">Blog</h1>
+          <p>I write about productivity hacks, Linux, Vim, and Software development. I'll be posting new blog post every Saturday before 17h00, SAST. </p>
+        </article>
+      </div>
+    </section>
+    <section class="blogs">
+      <div class="container">
+        <ul class="blogs-list">
+          <li class="blogs-list_item">
+            <p class="date">Jul 08, 2023</p>
+            <h5 class="card-title">
+              <a href="/output.html"
+                >Enhancing Typing Efficiency: Remapping Essential Keys to Improve Productivity on Linux</a
+              >
+            </h5>
+            <div class="blogs-list_item_description">
+              <p class="body-2">Optimizing Keyboard Layout by remapping Arrow keys, Ctrl, and Esc to easily accessible keys.</p>
+            </div>
+          </li>
 
-       <li class="blogs-list_item">
-          <p class="date">Jul 08, 2023</p>
-          <h5 class="card-title"><a href="/output.html">Blog title in full...it can be as long as you want. and one more thing about this title is that is very long</a></h5>
-          <div class="blogs-list_item_description">
-            <p class="body-2">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
-              deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non
-              provident, similique sunt in cu.</p>
-          </div>
-        </li> 
+          <li class="blogs-list_item">
+            <p class="date">Jul 08, 2023</p>
+            <h5 class="card-title">
+              <a href="/output.html"
+                >Blog title in full...it can be as long as you want. and one
+                more thing about this title is that is very long</a
+              >
+            </h5>
+            <div class="blogs-list_item_description">
+              <p class="body-2">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis praesentium voluptatum deleniti atque corrupti quos
+                dolores et quas molestias excepturi sint occaecati cupiditate
+                non provident, similique sunt in cu.
+              </p>
+            </div>
+          </li>
 
-       <li class="blogs-list_item">
-          <p class="date">Jul 08, 2023</p>
-          <h5 class="card-title"><a href="/output.html">Blog title in full...it can be as long as you want</a></h5>
-          <div class="blogs-list_item_description">
-            <p class="body-2">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
-              deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non
-              provident, similique sunt in cu.</p>
-          </div>
-        </li> 
-        
-      </ul>
-
-    </div>
-  </section>
- <footer>
+          <li class="blogs-list_item">
+            <p class="date">Jul 08, 2023</p>
+            <h5 class="card-title">
+              <a href="/output.html"
+                >Blog title in full...it can be as long as you want</a
+              >
+            </h5>
+            <div class="blogs-list_item_description">
+              <p class="body-2">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis praesentium voluptatum deleniti atque corrupti quos
+                dolores et quas molestias excepturi sint occaecati cupiditate
+                non provident, similique sunt in cu.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <footer>
       <div class="container">
         <div class="footer_flex">
           <div class="footer-about">
@@ -161,7 +191,6 @@
           </p>
         </div>
       </div>
-    </footer> 
-</body>
-
+    </footer>
+  </body>
 </html>

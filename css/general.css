@@ -443,7 +443,7 @@ header .container {
     font-size: 24px;
     transform: translateY(-300px);
     transition: transform 0.2s;
-    background: #384663;;
+    background: #384663;
     padding: 16px 16px;
   }
 
@@ -809,8 +809,22 @@ button, .btn {
   /* padding-top: 2.5rem; */
 }
 
+/* -- Blog -- */
 .blogs {
   min-height: 600px;
+}
+
+.blog-intro{
+  background-color: #1d2a43;
+}
+
+.blog-intro p{
+  color: var(--light-hover-c);
+  max-inline-size: 65ch;
+}
+
+.blog-title{
+  margin-bottom: var(--lgth-3);
 }
 
 .blogs .container {
@@ -819,7 +833,7 @@ button, .btn {
 
 .blogs-list_item {
   list-style-type: none;
-  margin-bottom: 2rem;
+  margin-bottom: var(--xx);
 }
 
 .blogs-list_item:last-child {
