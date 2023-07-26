@@ -249,7 +249,7 @@ a:hover {
   padding: var(--lgth-4) 0;
 }
 
-.about-statement p:first-child {
+.about-statement p {
   margin-bottom: var(--lgth-4);
 }
 
@@ -266,6 +266,12 @@ a:hover {
 
 .misc-statement p {
   margin-bottom: var(--lgth-2);
+}
+
+.misc-statement_item{
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  column-gap: 16px;
 }
 
 hr {
@@ -526,6 +532,7 @@ header .container {
 
 .profile-tagline_statement{
   margin-bottom: var(--lgth-2) ;
+  max-inline-size: 48ch;
 }
 
 .icon-color{
