@@ -10,14 +10,25 @@
   --light-hover-c: hsla(178, 79%, 93%, 0.7);
   --orange-c: hsl(0, 98%, 70%);
 
+/*
+  --lgth-1: 0.25rem; /* 4px *
+  --lgth-2: 0.5rem; /* 8px *
+  --lgth-3: 1rem; /* 16px *
+  --lgth-4: 2rem; /* 32px *
+  --lgth-5: 4rem; /* 64px *
+  --lgth-6: 8rem; /* 128px *
+*/
   /* lengths  */
 
-  --lgth-1: 0.25rem; /* 4px */
-  --lgth-2: 0.5rem; /* 8px */
-  --lgth-3: 1rem; /* 16px */
-  --lgth-4: 2rem; /* 32px */
-  --lgth-5: 4rem; /* 64px */
-  --lgth-6: 8rem; /* 128px */
+  --lgth-1: clamp(0.25rem, calc(0.23rem + 0.11vw), 0.31rem);
+  --lgth-2: clamp(0.50rem, calc(0.46rem + 0.22vw), 0.63rem);
+  --lgth-3: clamp(0.75rem, calc(0.68rem + 0.33vw), 0.94rem);
+   ---x: clamp(1.00rem, calc(0.91rem + 0.43vw), 1.25rem);
+  --lgth-4: clamp(1.50rem, calc(1.37rem + 0.65vw), 1.88rem);
+  --xx: clamp(2.00rem, calc(1.83rem + 0.87vw), 2.50rem);
+  --lgth-5: clamp(3.00rem, calc(2.74rem + 1.30vw), 3.75rem);
+  --xxx: clamp(4.00rem, calc(3.65rem + 1.74vw), 5.00rem);
+  --lgth-6: clamp(6.00rem, calc(5.48rem + 2.61vw), 7.50rem);
 
   --step--2: clamp(0.69rem, calc(0.66rem + 0.18vw), 0.80rem);
   --step--1: clamp(0.83rem, calc(0.78rem + 0.29vw), 1.00rem);
@@ -80,37 +91,59 @@ h1 {
 h2 {
   font-weight: 300;
   font-size: var(--step-4);
+  letter-spacing: -0.5px;
 }
 
 h3 {
   font-size: var(--step-3);
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.2;
 }
 
 h4 {
   font-size: var(--step-2);
-  /* font-size: 28px; */
+  font-weight: 400;
+  letter-spacing: 0.25px;
 }
 
 h5 {
   font-size: var(--step-1);
-  /* font-size: px; */
+  font-weight: 400;
 }
 
 h6 {
   font-size: var(--step-0);
-  /* font-size: 22px; */
-}
-
-p{ 
-  font-size: var(--step-0);
+  font-weight: 500;
+  letter-spacing: 0.15px;
 }
 
 .title {
   margin-bottom: 2.5rem;
 }
 
+.subtitle-1{
+  font-size: var(--step--1);
+  font-weight: 400;
+  letter-spacing: 0.15px;
+}
+
+.subtitle-1{
+  font-size: var(--step--2);
+  font-weight: 500;
+  letter-spacing: 0.1px;
+}
+
+p{ 
+  font-size: var(--step-0);
+  letter-spacing: 0.5px;
+}
+
+.body-2{
+  font-size: var(--step--1);
+  max-inline-size: 70ch;
+  line-height: 1.5;
+  letter-spacing: 0.25px;
+}
 .card-title {
   font-size: 1.125rem;
   margin-bottom: 0.5rem;
@@ -128,6 +161,13 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+.overline{
+  font-size: var(--step--2);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+/* ----- */
 
 .p-card-container {
   display: flex;
@@ -148,7 +188,6 @@ a:hover {
 
 .view {
   color: var(--orange-c);
-  font-size: 14px;
   align-items: center;
   margin-right: 0.5rem;
 }
@@ -163,7 +202,7 @@ a:hover {
 
 .icon {
   color: var(--light-primary-c);
-  font-size: 24px;
+  font-size: var(--step-1);
   margin-right: 0.5rem;
 }
 
@@ -196,9 +235,7 @@ a:hover {
 
 .profile-tagline {
   color: var(--light-hover-c);
-  font-weight: 300;
-  font-size: 1.75rem;
-  letter-spacing: 2px;
+  /* font-size: 1.75rem; */
   margin-bottom: var(--lgth-4);
 }
 
@@ -207,7 +244,7 @@ a:hover {
 }
 
 .about-statement {
-  max-width: 800px;
+  max-width: 65ch;
   line-height: 1.5;
   padding: var(--lgth-4) 0;
 }
@@ -266,7 +303,7 @@ hr {
 
 .date {
   color: var(--light-hover-c);
-  font-size: 0.875rem;
+  /* font-size: 0.875rem; */
   margin-bottom: 0.25rem;
   font-family: Fira Mono;
 }
@@ -339,7 +376,7 @@ header .container {
 
 .nav-item {
   color: var(--light-primary-c);
-  font-size: 20px;
+  font-size: var(--step--1);
   padding: var(--lgth-2) var(--lgth-3);
   margin-right: var(--lgth-1);
   font-family: Fira Mono;
@@ -390,12 +427,11 @@ header .container {
     position: absolute;
     display: block;
     text-align: right;
-    width: 200px;
     cursor: pointer;
     background: none;
     color: white;
     border: none;
-    font-size: 24px;
+    font-size: 1.5rem;
     z-index: 2;
   }
 
@@ -488,6 +524,14 @@ header .container {
   position: relative;
 }
 
+.profile-tagline_statement{
+  margin-bottom: var(--lgth-2) ;
+}
+
+.icon-color{
+color: var(--light-hover-c);
+}
+
 article {
   flex: 1;
 }
@@ -530,6 +574,10 @@ article {
 }
 
 /* -- Buttons --- */
+button, .btn {
+  font-weight: bold;
+  font-size: var(--step--1);
+}
 
 .primary-bt {
   border: none;
@@ -538,7 +586,6 @@ article {
   color: var(--light-primary-c);
   background: var(--orange-c);
   font-family: Fira Mono;
-  font-size: 22px;
 }
 
 .primary-bt:hover {
