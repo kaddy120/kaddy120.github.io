@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Fira Mono"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="../css/github-markdown.css" rel="stylesheet" />
+    <link href="css/general.css" rel="stylesheet" />
+    <script src="index.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="log">
+          <h6 class="log_kaddy">Kaddy</h6>
+          <h6 class="log_marindi">Marindi</h6>
+        </div>
+        <!-- <nav> -->
+        <nav role="navigation" class="burger">
+          <!-- <ul class="nav"> -->
+          <button onclick="toggleMenu()" class="hamburger-menu">
+            <!-- material icons https://material.io/resources/icons/ -->
+            <i class="fa-solid fa-bars menuIcon"></i>
+            <i class="fa-solid fa-xmark closeIcon"></i>
+          </button>
+          <!-- <ul class="nav nav-flex"> -->
+          <ul id="nav-list" class="nav nav-flex menu">
+            <li><a class="nav-item" href="/#home">Home</a></li>
+            <li>
+              <a class="nav-item" href="/blog.html">Blog</a>
+            </li>
+            <li><a class="nav-item" href="/bookmarks">Bookmarks</a></li>
+            <!-- <li class="nav_item-resume"> -->
+            <!--   <a -->
+            <!--     class="nav-item secondary-bt btn" -->
+            <!--     href="assets/RusselResume.pdf" -->
+            <!--     target="_blank" -->
+            <!--     rel="noopener noreferrer" -->
+            <!--     >Resume</a -->
+            <!--   > -->
+            <!-- </li> -->
+            <li>
+              <ul class="nav-item_socials nav-flex">
+                <li>
+                  <a
+                    href="https://github.com/kaddy120"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fab icon fa-github-square"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/kaddy-marindi"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fab icon fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- </nav> -->
+    </header>
+    <section class="blog-intro">
+      <div class="container">
+        <article>
+          <h1 class="blog-title">Bookmarks</h1>
+          <p>
+            I bookmark good reads, books and blog articles; free online learning resource; and Youtube videos.
+          </p>
+        </article>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <article class="markdown-body">$body$</article>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="footer_flex">
+          <div class="footer-about">
+            <h6>Kaddy's blog</h6>
+            <p>Kaddy Marindi</p>
+            <p>kad.marindi@gmail.com</p>
+          </div>
+          <div class="footer-socials">
+            <h6>Find me:</h6>
+            <ul>
+              <li>
+                <a
+                  href="https://github.com/kaddy120"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab icon fa-github-square"></i>
+                  https://github.com/kaddy120
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/kaddy-marindi"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab icon fa-linkedin"></i
+                  >https://www.linkedin.com/in/kaddy-marindi
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h6>Site Links</h6>
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="/blog.html">Blog</a></li>
+              <li><a href="">resume</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-blog-tagline">
+          <p>
+            In my <a href="/blog.html">blog</a>, I write about tech stuff that
+            I'm currently learning.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
