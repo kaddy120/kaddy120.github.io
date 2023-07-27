@@ -688,6 +688,10 @@ body {
   margin-bottom: 0;
 }
 
+.markdown-body li{
+  list-style-type: decimal;
+}
+
 .markdown-body li > p {
   margin-top: 16px;
 }
