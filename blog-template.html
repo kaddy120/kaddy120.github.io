@@ -5,8 +5,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="css/prism.css" rel="stylesheet" />
-    <link href="css/github-markdown.css" rel="stylesheet" />
-    <link href="css/general.css" rel="stylesheet" />
+    <!-- <link href="../css/general.css" rel="stylesheet" /> -->
+    <link href="../css/github-markdown.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Fira Mono"
+      rel="stylesheet"
+    />
     <link
       href="https://fonts.googleapis.com/css?family=Poppins"
       rel="stylesheet"
@@ -18,6 +22,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="index.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
       .markdown-body {
@@ -44,47 +49,60 @@
 
   <body>
     <header>
-      <div class="log">
-        <h4 class="log_kaddy">Kaddy's</h4>
-        <h4 class="log_marindi">Blog</h4>
-      </div>
-      <!-- <nav> -->
-      <ul class="nav nav-flex">
-        <li><a class="nav-item" href="/">About</a></li>
-        <li>
-          <a
-            class="nav-item"
-            href="assets/RusselResume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Resume</a
-          >
-        </li>
-        <li>
-          <ul class="nav-item_socials nav-flex">
+      <div class="container">
+        <div class="log">
+          <h6 class="log_kaddy">Kaddy</h6>
+          <h6 class="log_marindi">Marindi</h6>
+        </div>
+        <!-- <nav> -->
+        <nav role="navigation" class="burger">
+          <!-- <ul class="nav"> -->
+          <button onclick="toggleMenu()" class="hamburger-menu">
+            <!-- material icons https://material.io/resources/icons/ -->
+            <i class="fa-solid fa-bars menuIcon"></i>
+            <i class="fa-solid fa-xmark closeIcon"></i>
+          </button>
+          <!-- <ul class="nav nav-flex"> -->
+          <ul id="nav-list" class="nav nav-flex menu">
+            <li><a class="nav-item" href="/#home">Home</a></li>
             <li>
+              <a class="nav-item" href="/blog.html">Blog</a>
+            </li>
+            <li><a class="nav-item" href="/bookmarks">Bookmarks</a></li>
+            <li class="nav_item-resume">
               <a
-                class="icon"
-                href="https://github.com/kaddy120"
+                class="nav-item secondary-bt btn"
+                href="assets/RusselResume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
+                >Resume</a
               >
-                <i class="fab fa-github-square"></i>
-              </a>
             </li>
             <li>
-              <a
-                class="icon"
-                href="https://www.linkedin.com/in/kaddy-marindi"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="fab fa-linkedin"></i>
-              </a>
+              <ul class="nav-item_socials nav-flex">
+                <li>
+                  <a
+                    href="https://github.com/kaddy120"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fab icon fa-github-square"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/kaddy-marindi"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fab icon fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
             </li>
           </ul>
-        </li>
-      </ul>
+        </nav>
+      </div>
       <!-- </nav> -->
     </header>
     <article class="markdown-body">$body$</article>
