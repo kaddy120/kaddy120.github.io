@@ -1,6 +1,6 @@
 ## Good blog post. 
 
-The internet is immense, full of all sorts of entertainment, forums, social media and your Netflix, soon it will be filled with AI-generated content. With so much content, it's easy to miss out on the good reads. Now and then one stumbles across a well-written blog post that makes one pause, think, reflect. I keep my list of those here. I could have bookmarked these posts in my browser, but I'm afraid they'll get lost in my one thousand and one bookmarks
+The internet is immense, full of all sorts of entertainment, forums, social media and your Netflix, soon it will be filled with AI-generated content. With so much content, it's easy to miss out on the good reads. Now and then one stumbles across a well-written blog post that makes one pause, think, reflect. I keep my list of those here. I could have bookmarked these posts in my browser, but I'm afraid they'll get lost in my thousand and one bookmarks
 
 1. [Do the real Thing.](https://www.scotthyoung.com/blog/2020/05/04/do-the-real-thing/)
 2. [Teach Yourself Programming in Ten Years ](http://norvig.com/21-days.html?goodforonemore)by Peter Norvig
