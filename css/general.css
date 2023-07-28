@@ -52,7 +52,7 @@
 
 body {
   background: var(--main-blue-c);
-  font-family: Poppins;
+  font-family: Poppins, -apple-system, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue;
   color: var(--light-primary-c);
 }
 

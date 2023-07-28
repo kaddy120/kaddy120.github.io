@@ -1,0 +1,26 @@
+Articles:
+  - title: my first blog ever
+    date: 23 July
+    tags:
+      - vim
+      - Linux
+      - keymaps
+    discreption: "Enhancing Typing Efficiency: Remapping Essential Keys to Improve Productivity on Linux"
+  - title: my second blog ever
+    date: 27 July
+    tags:
+      - css
+      - tag2
+      - keymaps
+    discreption: >
+                Enhancing Typing Efficiency: Remapping Essential Keys to Improve Productivity on Linux
+                This discprtion can be quite long, so is better to use indent character
+  - title: my second blog ever
+    date: 27 July
+    tags:
+      - css
+      - tag2
+      - keymaps
+    discreption: >
+                Enhancing Typing Efficiency: Remapping Essential Keys to Improve Productivity on Linux
+                This discprtion can be quite long, so is better to use indent character

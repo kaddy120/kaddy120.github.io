@@ -1,0 +1,8 @@
+ul.blogs-list
+        each blog, index in locals 
+                li.blogs-list_item
+                        p.date= blog.date
+                        h5.card-title
+                                a(href=`blogs/${blog.title}.html`)= blog.title 
+                        .blogs-list_item_description
+                                p.body-2 Optimizing Keyboard Layout by remapping Arrow keys, Ctrl, and Esc to easily accessible keys.
