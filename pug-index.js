@@ -62,7 +62,7 @@ function createPost(blogs) {
     blogs = blogs.map((blog) => {
       return { ...blog, file: path.parse(blog.file).name };
     });
-    
+
     const blog_list = compiledFunction(blogs);
     const blog_posts = blog_list_template.replace('$BLOG-POST$', blog_list);
     fs.writeFileSync('./test.html', blog_posts);
@@ -87,12 +87,21 @@ function markdwownToHtml(blogs) {
         const markdownContent = fs.readFileSync(`./md/${file}`, 'utf8');
         const blogContent = marked(markdownContent);
         const blogFinal = blog_post_template.replace('$body$', blogContent);
-        /* console.log(html); */
         fs.writeFileSync(`./blogs/${fileName}.html`, blogFinal);
       } else {
-        console.log(
-          'check if the blog has been updated ever since the last compilation'
-        );
+        const mdTimeStamp = lastModification(`./md/${file}`);
+        const htmlTimeStamp = lastModification(`./blogs/${fileName}.html`);
+        const date1 = new Date(mdTimeStamp);
+        const date2 = new Date(htmlTimeStamp);
+        if (date1 > date2) {
+          // You have repeated yourself, refactor this part later
+          const markdownContent = fs.readFileSync(`./md/${file}`, 'utf8');
+          const blogContent = marked(markdownContent);
+          const blogFinal = blog_post_template.replace('$body$', blogContent);
+          fs.writeFileSync(`./blogs/${fileName}.html`, blogFinal);
+
+          console.log(`I have recompiled ${file} because it's modified`)
+        }
       }
     }
   } catch (err) {
