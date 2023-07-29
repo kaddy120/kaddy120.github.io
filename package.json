@@ -4,7 +4,7 @@
   "description": "## using Pandoc",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "ls"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/kaddy120/kaddy120.github.io#readme",
   "devDependencies": {
+    "marked": "^5.1.2",
+    "marked-gfm-heading-id": "^3.0.4",
     "pug": "^3.0.2",
     "yaml": "^2.3.1"
   },

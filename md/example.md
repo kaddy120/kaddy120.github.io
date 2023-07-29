@@ -10,6 +10,17 @@ Pellentesque a justo vel massa fermentum aliquet.
 
 Sed ac enim eu nibh sagittis efficitur.
 
+```javascript
+function lastModification(filepath) {
+  try {
+    const stats = fs.statSync(filepath);
+    return stats.mtime;
+  } catch (err) {
+    console.error(err);
+  }
+}
+```
+
 ## Section 2
 
 Donec quis justo sit amet velit posuere posuere.
