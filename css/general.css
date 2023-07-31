@@ -160,6 +160,12 @@ a:hover {
   text-decoration: underline;
 }
 
+
+nav a.active{
+  font-weight: bold;
+  color: var(--light-primary-c)
+}
+
 .overline{
   font-size: var(--step--2);
   text-transform: uppercase;
@@ -216,10 +222,6 @@ a:hover {
   color: var(--light-hover-c);
 }
 
-.nav-item:active {
-  color: var(--orange-c);
-}
-
 .nav_item-resume {
   margin-right: var(--lgth-4);
 }
@@ -253,7 +255,6 @@ a:hover {
 .about-statement p:not(:last-child){
   margin-bottom: var(--lgth-4);
 }
-
 .misc {
   margin-bottom: var(--lgth-5);
   padding: var(--lgth-4) 0;
@@ -367,7 +368,7 @@ header .container {
 }
 
 .nav-item {
-  color: var(--light-primary-c);
+  color: var(--light-hover-c);
   font-size: var(--step--1);
   padding: var(--lgth-2) var(--lgth-3);
   margin-right: var(--lgth-1);
