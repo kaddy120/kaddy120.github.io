@@ -30,7 +30,7 @@ const compiledFunction = pug.compileFile('templates/post.pug');
 
 try {
   const blog_list_template = fs.readFileSync(
-    './blogs-list-template.html',
+    './templates/blogs-list-template.html',
     'utf8'
   );
   /* console.log(blog_list_template); */
@@ -52,7 +52,7 @@ try {
 function createPost(blogs) {
   try {
     const blog_list_template = fs.readFileSync(
-      './blogs-list-template.html',
+      './templates/blogs-list-template.html',
       'utf8'
     );
 
@@ -71,7 +71,7 @@ function createPost(blogs) {
 
 function markdwownToHtml(blogs) {
   try {
-    const blog_post_template = fs.readFileSync('./blog-template.html', 'utf8');
+    const blog_post_template = fs.readFileSync('./templates/blog-template.html', 'utf8');
 
     const direcotryPathHTML = './blogs';
 

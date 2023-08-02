@@ -3,6 +3,7 @@
 <!-- <span style="color: #999999;">08 Jul, 2023 - Kaddy Marindi</span> -->
 <!---->
 
+
 For heavy computer users, a keyboard is often a primary interface for interacting with the system when typing, navigating, and using shortcuts. Some of the most frequently used keys such as Esc, Ctrl, and arrow keys are far from the home row keys. We have to overextend our fingers to press them; consequently, causing errors that can disrupt the typing flow and reduce productivity.
 
 In this article, I'll show you how to remap Esc, Ctrl and arrows keys in Linux, X windows systems, to easily accessible locations on the keyboard using two tools: `xmodmap` and `xcape`. If you are getting confused when following along, refer to my `xmodmap` configuration on [GitHub](https://github.com/kaddy120/dotfile/blob/master/.xmodmap), which most part of this article is base on. 
