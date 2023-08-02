@@ -70,16 +70,18 @@ document.addEventListener('DOMContentLoaded', function () {
       );
 
       const rect = section.getBoundingClientRect();
-      const windowHeight = window.innerHeight || document.documentElement.clientHeight;
-      const vertInView = windowHeight / 12 <= rect.top && (windowHeight/12)+ 250 >= rect.bottom ;
-        /* && rect.bottom >= windowHeight / 4; */
+      const windowHeight =
+        window.innerHeight || document.documentElement.clientHeight;
+      const vertInView =
+        windowHeight / 12 <= rect.top && windowHeight / 12 + 250 >= rect.bottom;
+      /* && rect.bottom >= windowHeight / 4; */
 
       if (vertInView) {
         // Remove the "active" class from all links
         tocLinks.forEach((link) => {
           link.classList.remove(highlightActive);
         });
-          correspondingLink.classList.add(highlightActive);
+        correspondingLink.classList.add(highlightActive);
         // Add the "active" class to the corresponding link
       }
     });
@@ -113,10 +115,8 @@ document.addEventListener('DOMContentLoaded', function () {
       this.classList.add('active');
       // Add the "active" class to the clicked link
 
-      // Scroll to the target section after a small delay (e.g., 300ms)
-      document.querySelector(targetSectionId).scrollIntoView({
-        behavior: 'smooth',
-      });
+      scrollToSection(targetSectionId, 95);
+      /* overflow-x: visible; */
     });
   });
 
@@ -135,9 +135,30 @@ document.addEventListener('DOMContentLoaded', function () {
       // Add the "active" class to the clicked link
 
       // Scroll to the target section after a small delay (e.g., 300ms)
-      document.querySelector(targetSectionId).scrollIntoView({
-        behavior: 'smooth',
-      });
+      /* document.querySelector(targetSectionId).scrollIntoView({ */
+      /*   behavior: 'smooth', */
+      /* }); */
+      scrollToSection(targetSectionId, 100);
     });
   });
+
+  // Function to scroll a section into view and place it at a certain window height
+  function scrollToSection(sectionId, offsetFromTop) {
+    console.log(sectionId)
+    const section = document.querySelector(sectionId);
+    console.log(section)
+    if (section) {
+      const rect = section.getBoundingClientRect();
+      const scrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
+      const targetScrollPosition = rect.top + scrollTop - offsetFromTop;
+
+      // Scroll to the target position
+      window.scroll({
+        top: targetScrollPosition,
+        behavior: 'smooth', // Use 'auto' for instant scroll without animation
+      });
+    }
+  }
+  // Example: Scroll to 'section2' and place it at 100 pixels from the top of the window
 });
