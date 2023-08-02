@@ -861,21 +861,22 @@ aside{
   min-width: 400px;
 }
 
+/* aside:hover{ */
+/*   width: 400px; */
+/* } */
+
 .toc{
   color: var(--light-hover-c);
   margin-inline-end: 60px;
-  /* height: calc(80vh); */
-  /* overflow-y: scroll; */
 }
 
 .toc > ul{
-  max-height: calc(100vh - 97px - 45px); 
-}
-
-.toc> ul:hover{
+  max-height: calc(100vh - 97px - 80px); 
   overflow-y: scroll;
 }
 
+.toc> ul:hover{
+}
 
 li a {
   color: inherit; /* This property makes the link inherit the color from its parent (the list item) */
@@ -904,8 +905,12 @@ li a {
 }
 
 .lvl3 .toc_listitem{
-  padding-inline: var(--x);
   padding-block: 0.25rem;
+}
+
+.lvl3 .toc_anchor{
+  padding-inline: var(--x);
+  display: inline-block;
 }
 
 .toc_highlight {
@@ -916,7 +921,7 @@ li a {
 .lvl3 .toc_highlight {
   border-left: 3px solid var(--orange-c);
   position: relative;
-  left: -1.5px;
+  left: -2.5px;
 }
 
 @media (max-width: 1270px)
