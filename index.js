@@ -1,4 +1,4 @@
-function copyEmail() {}
+function copyEmail() { }
 
 function toggleMenu() {
   const menu = document.getElementById('nav-list');
@@ -18,7 +18,7 @@ function toggleMenu() {
   /* menu.classList.append("showMenu"); */
 }
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function() {
   const navbarLinks = document.querySelectorAll('nav a');
   const sections = document.querySelectorAll('section');
 
@@ -59,8 +59,10 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  let isEventListenerEnabled = true;
   function updateTocActiveLink(sections, highlightActive) {
     sections.forEach((section) => {
+      if (!isEventListenerEnabled) return;
       const sectionId = section.getAttribute('id');
       /* const correspondingLink = document.querySelector( */
       /*   `nav a[href="#${sectionId}"]` */
@@ -92,17 +94,26 @@ document.addEventListener('DOMContentLoaded', function () {
   updateTocActiveLink(headingSections, 'toc_highlight');
 
   // Update active link on scroll
-  window.addEventListener('scroll', function () {
+  window.addEventListener('scroll', function() {
     updateActiveLink(sections, 'active');
   });
 
-  window.addEventListener('scroll', function () {
+  window.addEventListener('scroll', function() {
     updateTocActiveLink(headingSections, 'toc_highlight');
   });
 
+  function disableEventListenerTemporarily() {
+    isEventListenerEnabled = false;
+  }
+
+  // Function to re-enable the event listener
+  function enableEventListener() {
+    isEventListenerEnabled = true;
+  }
+
   // Handle link click events
   navbarLinks.forEach((link) => {
-    link.addEventListener('click', function (event) {
+    link.addEventListener('click', function(event) {
       const href = this.getAttribute('href');
       if (href[0] === '#') event.preventDefault(); // Prevent default link navigation
 
@@ -115,13 +126,13 @@ document.addEventListener('DOMContentLoaded', function () {
       this.classList.add('active');
       // Add the "active" class to the clicked link
 
-      scrollToSection(targetSectionId, 95);
+      scrollToSection(targetSectionId, 100);
       /* overflow-x: visible; */
     });
   });
 
   tocLinks.forEach((link) => {
-    link.addEventListener('click', function (event) {
+    link.addEventListener('click', function(event) {
       const href = this.getAttribute('href');
       if (href[0] === '#') event.preventDefault(); // Prevent default link navigation
 
@@ -132,21 +143,18 @@ document.addEventListener('DOMContentLoaded', function () {
         link.classList.remove('toc_highlight');
       });
       this.classList.add('toc_highlight');
-      // Add the "active" class to the clicked link
 
-      // Scroll to the target section after a small delay (e.g., 300ms)
-      /* document.querySelector(targetSectionId).scrollIntoView({ */
-      /*   behavior: 'smooth', */
-      /* }); */
+      disableEventListenerTemporarily() // Temporarily disable the event listener for 3 seconds
+      setTimeout(enableEventListener, 3000);
       scrollToSection(targetSectionId, 100);
     });
   });
 
   // Function to scroll a section into view and place it at a certain window height
   function scrollToSection(sectionId, offsetFromTop) {
-    console.log(sectionId)
+    console.log(sectionId);
     const section = document.querySelector(sectionId);
-    console.log(section)
+    console.log(section);
     if (section) {
       const rect = section.getBoundingClientRect();
       const scrollTop =

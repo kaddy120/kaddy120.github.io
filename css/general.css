@@ -918,10 +918,14 @@ li a {
   font-weight: 600;
 }
 
+aside, .toc, .lvl3{
+  overflow-x: visible;
+}
+
 .lvl3 .toc_highlight {
   border-left: 3px solid var(--orange-c);
   position: relative;
-  left: -2.5px;
+  left: -1.5px;
 }
 
 @media (max-width: 1400px)
