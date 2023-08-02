@@ -332,6 +332,11 @@ hr {
   padding: var(--lgth-5) var(--lgth-4);
 }
 
+header .container,
+footer .container{
+  max-width: 1450px;
+}
+
 /* Mobile */
 @media (max-width: 400px) {
   .container {
@@ -857,13 +862,33 @@ main.blog-layout {
 }
 
 /* -- blog Toc -- */
-aside{
-  min-width: 400px;
-}
 
-/* aside:hover{ */
-/*   width: 400px; */
+/* width */
+/* ::-webkit-scrollbar { */
+/*   width: 10px; */
 /* } */
+/**/
+/* /* Track */ */
+/* ::-webkit-scrollbar-track { */
+/*   background: #1d325a;  */
+/* } */
+/*   */
+/* /* Handle */ */
+/* ::-webkit-scrollbar-thumb { */
+/*   background: var(--light-hover-c)  */
+/* } */
+/**/
+/* /* Handle on hover */ */
+/* ::-webkit-scrollbar-thumb:hover { */
+/*   background: #555;  */
+/* } */
+
+
+/* Don't remove this  style below although it's empty. */
+/* when it's removed, it changes toc color to bright */
+
+aside{
+}
 
 .toc{
   color: var(--light-hover-c);
@@ -871,11 +896,14 @@ aside{
 }
 
 .toc > ul{
+  min-width: 400px;
   max-height: calc(100vh - 97px - 80px); 
-  overflow-y: scroll;
+  overflow-y: hidden;
+  scrollbar-color: #1d325a var(--main-blue-c); 
 }
 
 .toc> ul:hover{
+  overflow-y: scroll;
 }
 
 li a {
@@ -918,9 +946,6 @@ li a {
   font-weight: 600;
 }
 
-aside, .toc, .lvl3{
-  overflow-x: visible;
-}
 
 .lvl3 .toc_highlight {
   border-left: 3px solid var(--orange-c);

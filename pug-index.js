@@ -63,7 +63,7 @@ function createPost(blogs) {
 
     const blog_list = compiledFunction(blogs);
     const blog_posts = blog_list_template.replace('$BLOG-POST$', blog_list);
-    fs.writeFileSync('./test.html', blog_posts);
+    fs.writeFileSync('./blog.html', blog_posts);
   } catch (err) {
     console.error(err);
   }

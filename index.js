@@ -19,13 +19,21 @@ function toggleMenu() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  const navbarLinks = document.querySelectorAll('nav a');
+  let isEventListenerEnabled = true;
+
+  let navbarLinks = document.querySelectorAll('nav a');
+  // remove non-anchors links 
+  navbarLinks = Array.prototype.slice.call(navbarLinks).filter((link) => {
+    const href = link.getAttribute('href');
+    console.log(href)
+    return href[0] === '#';
+  });
+
   const sections = document.querySelectorAll('section');
 
   const tocLinks = document.querySelectorAll('.toc_anchor');
   const headingSections = document.querySelectorAll('.markdown-body h2, h3');
 
-  /* const sections = document.querySelectorAll('section'); */
   // Function to check if an element is in the viewport
   function isInViewport(element) {
     const rect = element.getBoundingClientRect();
@@ -59,7 +67,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  let isEventListenerEnabled = true;
   function updateTocActiveLink(sections, highlightActive) {
     sections.forEach((section) => {
       if (!isEventListenerEnabled) return;
@@ -144,7 +151,7 @@ document.addEventListener('DOMContentLoaded', function() {
       });
       this.classList.add('toc_highlight');
 
-      disableEventListenerTemporarily() // Temporarily disable the event listener for 3 seconds
+      disableEventListenerTemporarily(); // Temporarily disable the event listener for 3 seconds
       setTimeout(enableEventListener, 3000);
       scrollToSection(targetSectionId, 100);
     });
@@ -168,5 +175,4 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     }
   }
-  // Example: Scroll to 'section2' and place it at 100 pixels from the top of the window
 });
