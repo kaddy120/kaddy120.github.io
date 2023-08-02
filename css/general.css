@@ -854,6 +854,52 @@ button, .btn {
   font-size: 0.875rem;
 }
 
+main.blog-layout{
+  display: flex;
+  justify-content: center;
+}
+
+/* -- blog Toc -- */
+
+aside.toc{
+  justify-self: start;
+  color: var(--light-hover-c);
+  padding-inline: var(--lgth-4);
+  /* max-width: 350px; */
+  
+}
+.toc-list {
+  position: sticky;
+  top: 150px;
+}
+
+.toc .lvl2 ul {
+  border-left: 0.5px solid gray;
+}
+
+.lvl2 > *:first-child{
+  display: block;
+  padding-block: var(--lgth-1);
+}
+
+.lvl2 > *:first-child,
+.lvl3 {
+  max-inline-size: 30ch;
+}
+
+.lvl3 {
+  padding-inline: var(--x);
+  padding-block: 0.25rem;
+}
+
+.toc-highlight{
+  border-left: 3px solid var(--orange-c);
+  color: var(--orange-c);
+  font-weight: 600;
+  position: relative;
+  left: -1.5px;
+}
+
 /* --- Footer section --- */
 footer {
   border-top: 1px solid rgba(220, 255, 254, 0.2);
