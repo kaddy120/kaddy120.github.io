@@ -1,0 +1,11 @@
+ul.toc-list
+        each toc, index in locals 
+                li.lvl2 
+                        a.toc_listitem.toc_anchor(href=`#${toc.slug}`)= toc.content
+                        if toc.entry.length > 0
+                                ul.toc_list.lvl3 
+                                        each tocLvl3, index in toc.entry
+                                                li.toc_listitem 
+                                                        a.toc_anchor(href=`#${tocLvl3.slug}`)= tocLvl3.content
+
+

@@ -2,10 +2,10 @@ const YAML = require('yaml');
 const pug = require('pug');
 const path = require('path');
 const fs = require('fs');
+const createTOC = require('./test-markdown-toc');
 
 const { marked } = require('marked');
 const { gfmHeadingId } = require('marked-gfm-heading-id');
-const { create } = require('domain');
 
 marked.use(gfmHeadingId());
 
@@ -27,8 +27,6 @@ marked.setOptions({
 });
 
 const compiledFunction = pug.compileFile('templates/post.pug');
-
-var blog_list_template;
 
 try {
   const blog_list_template = fs.readFileSync(
@@ -84,9 +82,12 @@ function markdwownToHtml(blogs) {
       const fileName = path.parse(file).name;
       const temp = `${fileName}.html`;
       if (!myBlogsHTML.includes(temp)) {
+        // Okay i have repeated myself here, I will have to refacor this code. 
         const markdownContent = fs.readFileSync(`./md/${file}`, 'utf8');
         const blogContent = marked(markdownContent);
-        const blogFinal = blog_post_template.replace('$body$', blogContent);
+        const toc = createTOC(markdownContent);
+        let blogWithoutToc = blog_post_template.replace('$body$', blogContent);
+        let blogFinal = blogWithoutToc.replace('$TOC$', toc);
         fs.writeFileSync(`./blogs/${fileName}.html`, blogFinal);
       } else {
         const mdTimeStamp = lastModification(`./md/${file}`);
@@ -97,10 +98,15 @@ function markdwownToHtml(blogs) {
           // You have repeated yourself, refactor this part later
           const markdownContent = fs.readFileSync(`./md/${file}`, 'utf8');
           const blogContent = marked(markdownContent);
-          const blogFinal = blog_post_template.replace('$body$', blogContent);
+          const toc = createTOC(markdownContent);
+          let blogWithoutToc = blog_post_template.replace(
+            '$body$',
+            blogContent
+          );
+          let blogFinal = blogWithoutToc.replace('$TOC$', toc);
           fs.writeFileSync(`./blogs/${fileName}.html`, blogFinal);
 
-          console.log(`I have recompiled ${file} because it's modified`)
+          console.log(`I have recompiled ${file} because it's modified`);
         }
       }
     }
