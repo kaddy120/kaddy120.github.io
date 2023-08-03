@@ -2,6 +2,21 @@
 
 The internet is immense, full of all sorts of entertainment, forums, social media and your Netflix, soon it will be filled with AI-generated content. With so much content, it's easy to miss out on the good reads. Now and then one stumbles across a well-written blog post that makes one pause, think, reflect. I keep my list of those here. I could have bookmarked these posts in my browser, but I'm afraid they'll get lost in my thousand and one bookmarks
 
+```html
+ <section class="blog-intro">
+   <div class="container">
+     <article>
+       <h1 class="blog-title">Bookmarks</h1>
+       <p>
+         I bookmark good reads, books and blog articles; free online
+         learning resource; and Youtube videos.
+       </p>
+     </article>
+   </div>
+ </section>
+
+```
+
 1. [Do the real Thing.](https://www.scotthyoung.com/blog/2020/05/04/do-the-real-thing/)
 2. [Teach Yourself Programming in Ten Years ](http://norvig.com/21-days.html?goodforonemore)by Peter Norvig
 3. [12 resolutions for grad students](https://matt.might.net/articles/grad-student-resolutions/)

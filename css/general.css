@@ -333,7 +333,9 @@ hr {
 }
 
 header .container,
-footer .container{
+footer .container,
+.bookmark .container
+{
   max-width: 1450px;
 }
 
@@ -817,7 +819,7 @@ button,
   min-height: 600px;
 }
 
-.blog-intro {
+.blog-intro{
   background-color: #1d2a43;
 }
 
@@ -856,44 +858,27 @@ button,
   font-size: 0.875rem;
 }
 
-main.blog-layout {
+.blog-layout{
   display: flex;
   justify-content: center;
 }
 
+.bookmark .blog-layout{
+  justify-content: space-between;
+}
+
 /* -- blog Toc -- */
 
-/* width */
-/* ::-webkit-scrollbar { */
-/*   width: 10px; */
-/* } */
-/**/
-/* /* Track */ */
-/* ::-webkit-scrollbar-track { */
-/*   background: #1d325a;  */
-/* } */
-/*   */
-/* /* Handle */ */
-/* ::-webkit-scrollbar-thumb { */
-/*   background: var(--light-hover-c)  */
-/* } */
-/**/
-/* /* Handle on hover */ */
-/* ::-webkit-scrollbar-thumb:hover { */
-/*   background: #555;  */
-/* } */
-
-
-/* Don't remove this  style below although it's empty. */
-/* when it's removed, it changes toc color to bright */
-
 aside{
+
 }
 
 .toc{
   color: var(--light-hover-c);
-  margin-inline-end: 60px;
+  margin-inline-start: 60px;
 }
+
+
 
 .toc > ul{
   min-width: 400px;
@@ -915,8 +900,9 @@ li a {
 }
 
 .toc-list {
+  padding-top: 40px;
   position: sticky;
-  top: 150px;
+  top: 100px;
 }
 
 .toc .lvl2 ul {

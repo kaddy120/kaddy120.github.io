@@ -43,6 +43,7 @@ try {
     /* console.log(data); */
     const blogs = YAML.parse(data);
     markdwownToHtml(blogs.Articles);
+    mdToBookmarks();
     createPost(blogs.Articles);
   });
 } catch (err) {
@@ -71,48 +72,61 @@ function createPost(blogs) {
 
 function markdwownToHtml(blogs) {
   try {
-    const blog_post_template = fs.readFileSync('./templates/blog-template.html', 'utf8');
+    const blog_post_template = fs.readFileSync(
+      './templates/blog-template.html',
+      'utf8'
+    );
 
-    const direcotryPathHTML = './blogs';
-
-    const myBlogsHTML = searchFiles(direcotryPathHTML, '.html');
+    const blogPath = './blogs/';
+    const myBlogsHTML = searchFiles(blogPath, '.html');
     const myBlogsMd = blogs.map((blog) => blog.file);
 
     for (const file of myBlogsMd) {
       const fileName = path.parse(file).name;
       const temp = `${fileName}.html`;
       if (!myBlogsHTML.includes(temp)) {
-        // Okay i have repeated myself here, I will have to refacor this code. 
-        const markdownContent = fs.readFileSync(`./md/${file}`, 'utf8');
-        const blogContent = marked(markdownContent);
-        const toc = createTOC(markdownContent);
-        let blogWithoutToc = blog_post_template.replace('$body$', blogContent);
-        let blogFinal = blogWithoutToc.replace('$TOC$', toc);
-        fs.writeFileSync(`./blogs/${fileName}.html`, blogFinal);
+        markdownToPost(file, blog_post_template, blogPath);
       } else {
-        const mdTimeStamp = lastModification(`./md/${file}`);
-        const htmlTimeStamp = lastModification(`./blogs/${fileName}.html`);
-        const date1 = new Date(mdTimeStamp);
-        const date2 = new Date(htmlTimeStamp);
-        if (date1 > date2) {
-          // You have repeated yourself, refactor this part later
-          const markdownContent = fs.readFileSync(`./md/${file}`, 'utf8');
-          const blogContent = marked(markdownContent);
-          const toc = createTOC(markdownContent);
-          let blogWithoutToc = blog_post_template.replace(
-            '$body$',
-            blogContent
-          );
-          let blogFinal = blogWithoutToc.replace('$TOC$', toc);
-          fs.writeFileSync(`./blogs/${fileName}.html`, blogFinal);
-
-          console.log(`I have recompiled ${file} because it's modified`);
+        const mdDate = lastModification(`./md/${file}`);
+        const htmlDate = lastModification(`./blogs/${fileName}.html`);
+        if (mdDate > htmlDate) {
+          markdownToPost(file, blog_post_template, blogPath);
         }
       }
     }
   } catch (err) {
     console.error(err);
   }
+}
+
+function mdToBookmarks() {
+  try {
+    const bookmarksTemplate = fs.readFileSync(
+      './templates/bookmarks-template.html',
+      'utf8'
+    );
+    const file = 'bookmarks.md';
+    const bookmarksPath = './blogs/';
+
+    const mdDate = lastModification(`./md/${file}`);
+    const htmlDate = lastModification(`${bookmarksPath}bookmarks.html`);
+    if (mdDate > htmlDate) {
+      markdownToPost(file, bookmarksTemplate, bookmarksPath);
+    }
+  } catch (err) {
+    console.error(err);
+  }
+}
+
+/* convert markdwon file to html stored in blogs/ dir*/
+function markdownToPost(file, template, dest) {
+  const fileName = path.parse(file).name;
+  const markdownContent = fs.readFileSync(`./md/${file}`, 'utf8');
+  const blogContent = marked(markdownContent);
+  const toc = createTOC(markdownContent);
+  let blogWithoutToc = template.replace('$body$', blogContent);
+  let blogFinal = blogWithoutToc.replace('$TOC$', toc);
+  fs.writeFileSync(`${dest}${fileName}.html`, blogFinal);
 }
 
 function searchFiles(directotryPath, desiredExtension) {
@@ -127,7 +141,7 @@ function searchFiles(directotryPath, desiredExtension) {
 function lastModification(filepath) {
   try {
     const stats = fs.statSync(filepath);
-    return stats.mtime;
+    return new Date(stats.mtime);
   } catch (err) {
     console.error(err);
   }

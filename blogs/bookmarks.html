@@ -5,8 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="../css/prism.css" rel="stylesheet" />
-    <link href="../css/github-markdown.css" rel="stylesheet" />
     <link href="../css/general.css" rel="stylesheet" />
+    <link href="../css/github-markdown.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css?family=Fira Mono"
       rel="stylesheet"
@@ -22,8 +22,27 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script src="index.js"></script>
+    <script src="../index.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
     <style>
       .markdown-body {
         box-sizing: border-box;
@@ -69,7 +88,7 @@
             <li>
               <a class="nav-item" href="/blog.html">Blog</a>
             </li>
-            <li><a class="nav-item" href="/bookmarks">Bookmarks</a></li>
+            <li><a class="nav-item" href="/bookmarks.html">Bookmarks</a></li>
             <!-- <li class="nav_item-resume"> -->
             <!--   <a -->
             <!--     class="nav-item secondary-bt btn" -->
@@ -106,9 +125,32 @@
       </div>
       <!-- </nav> -->
     </header>
+    <section class="bookmark blog-intro">
+      <div class="container">
+        <article>
+          <h1 class="blog-title">Bookmarks</h1>
+          <p>
+            I bookmark good reads, books and blog articles; free online learning
+            resource; and Youtube videos.
+          </p>
+        </article>
+      </div>
+    </section>
     <main class="blog-layout">
       <article class="markdown-body"><h2 id="good-blog-post">Good blog post.</h2>
 <p>The internet is immense, full of all sorts of entertainment, forums, social media and your Netflix, soon it will be filled with AI-generated content. With so much content, it&#39;s easy to miss out on the good reads. Now and then one stumbles across a well-written blog post that makes one pause, think, reflect. I keep my list of those here. I could have bookmarked these posts in my browser, but I&#39;m afraid they&#39;ll get lost in my thousand and one bookmarks</p>
+<pre><code class="language-html"> &lt;section class=&quot;blog-intro&quot;&gt;
+   &lt;div class=&quot;container&quot;&gt;
+     &lt;article&gt;
+       &lt;h1 class=&quot;blog-title&quot;&gt;Bookmarks&lt;/h1&gt;
+       &lt;p&gt;
+         I bookmark good reads, books and blog articles; free online
+         learning resource; and Youtube videos.
+       &lt;/p&gt;
+     &lt;/article&gt;
+   &lt;/div&gt;
+ &lt;/section&gt;
+</code></pre>
 <ol>
 <li><a href="https://www.scotthyoung.com/blog/2020/05/04/do-the-real-thing/">Do the real Thing.</a></li>
 <li><a href="http://norvig.com/21-days.html?goodforonemore">Teach Yourself Programming in Ten Years </a>by Peter Norvig</li>
@@ -134,5 +176,55 @@
 </article>
       <aside class="toc"><ul class="toc-list"><li class="lvl2"> <a class="toc_listitem toc_anchor" href="#good-blog-post">Good blog post.</a></li><li class="lvl2"> <a class="toc_listitem toc_anchor" href="#youtube-videos">Youtube Videos</a></li><li class="lvl2"> <a class="toc_listitem toc_anchor" href="#css">CSS</a></li></ul></aside>
     </main>
+    <footer>
+      <div class="container">
+        <div class="footer_flex">
+          <div class="footer-about">
+            <h6>Kaddy's blog</h6>
+            <p>Kaddy Marindi</p>
+            <p>kad.marindi@gmail.com</p>
+          </div>
+          <div class="footer-socials">
+            <h6>Find me:</h6>
+            <ul>
+              <li>
+                <a
+                  href="https://github.com/kaddy120"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab icon fa-github-square"></i>
+                  https://github.com/kaddy120
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/kaddy-marindi"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab icon fa-linkedin"></i
+                  >https://www.linkedin.com/in/kaddy-marindi
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h6>Site Links</h6>
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="/blog.html">Blog</a></li>
+              <li><a href="">resume</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-blog-tagline">
+          <p>
+            In my <a href="/blog.html">blog</a>, I write about tech stuff that
+            I'm currently learning.
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

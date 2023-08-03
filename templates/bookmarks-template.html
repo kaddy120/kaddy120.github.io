@@ -4,6 +4,9 @@
     <title></title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../css/prism.css" rel="stylesheet" />
+    <link href="../css/general.css" rel="stylesheet" />
+    <link href="../css/github-markdown.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css?family=Fira Mono"
       rel="stylesheet"
@@ -19,16 +22,52 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png" />
+    <script src="../index.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/favicon-16x16.png"
+    />
     <link rel="manifest" href="/site.webmanifest" />
-    <link href="../css/github-markdown.css" rel="stylesheet" />
-    <link href="css/general.css" rel="stylesheet" />
-    <script src="index.js"></script>
+    <style>
+      .markdown-body {
+        box-sizing: border-box;
+        min-width: 200px;
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 45px;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body {
+          background-color: #111c32;
+        }
+      }
+
+      @media (max-width: 767px) {
+        .markdown-body {
+          padding: 15px;
+        }
+      }
+    </style>
   </head>
 
   <body>
+    <script src="../prism.js"></script>
     <header>
       <div class="container">
         <div class="log">
@@ -49,7 +88,7 @@
             <li>
               <a class="nav-item" href="/blog.html">Blog</a>
             </li>
-            <li><a class="nav-item" href="/bookmarks">Bookmarks</a></li>
+            <li><a class="nav-item" href="/blogs/bookmarks.html">Bookmarks</a></li>
             <!-- <li class="nav_item-resume"> -->
             <!--   <a -->
             <!--     class="nav-item secondary-bt btn" -->
@@ -86,21 +125,21 @@
       </div>
       <!-- </nav> -->
     </header>
-    <section class="blog-intro">
+    <section class="bookmark blog-intro">
       <div class="container">
         <article>
           <h1 class="blog-title">Bookmarks</h1>
           <p>
-            I bookmark good reads, books and blog articles; free online learning resource; and Youtube videos.
+            I bookmark good reads, books and blog articles; free online learning
+            resource; and Youtube videos.
           </p>
         </article>
       </div>
     </section>
-    <section>
-      <div class="container">
-        <article class="markdown-body">$body$</article>
-      </div>
-    </section>
+    <main class="blog-layout">
+      <article class="markdown-body">$body$</article>
+      <aside class="toc">$TOC$</aside>
+    </main>
     <footer>
       <div class="container">
         <div class="footer_flex">
