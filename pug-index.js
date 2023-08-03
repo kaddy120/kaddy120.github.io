@@ -88,8 +88,9 @@ function markdwownToHtml(blogs) {
         markdownToPost(file, blog_post_template, blogPath);
       } else {
         const mdDate = lastModification(`./md/${file}`);
+        const tempDate = lastModification(`./templates/blog-template.html`);
         const htmlDate = lastModification(`./blogs/${fileName}.html`);
-        if (mdDate > htmlDate) {
+        if (mdDate > htmlDate || tempDate > htmlDate) {
           markdownToPost(file, blog_post_template, blogPath);
         }
       }
@@ -109,8 +110,9 @@ function mdToBookmarks() {
     const bookmarksPath = './blogs/';
 
     const mdDate = lastModification(`./md/${file}`);
+    const templateDate = lastModification('./templates/bookmarks-template.html');
     const htmlDate = lastModification(`${bookmarksPath}bookmarks.html`);
-    if (mdDate > htmlDate) {
+    if (mdDate > htmlDate || templateDate > htmlDate) {
       markdownToPost(file, bookmarksTemplate, bookmarksPath);
     }
   } catch (err) {
