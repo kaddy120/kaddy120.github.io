@@ -25,6 +25,21 @@ function Player(){
 
 }
 
+
+// JavaScript to handle the sliding button toggle
+// JavaScript to handle the human-bot slider toggle
+const humanBotToggle = document.getElementById('human-bot-toggle');
+
+humanBotToggle.addEventListener('change', () => {
+    if (humanBotToggle.checked) {
+        // Perform actions when the slider is on the "Bot" option
+        console.log('Bot mode selected');
+    } else {
+        // Perform actions when the slider is on the "Human" option
+        console.log('Human mode selected');
+    }
+});
+
 const GameLogic = ((gameboard) => {
   let _results = document.querySelector('.results');
   let _winner = document.querySelector('#winner');

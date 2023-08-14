@@ -32,7 +32,27 @@
         </button>
       </nav>
     </header>
-    <main class="game">
+
+    <section class="splash">
+      <div class="container">
+        <h3 class="splash-subheading">Select opponent</h3>
+        <label class="slider-label slider-1">
+          <input type="checkbox" id="human-bot-toggle" />
+          <div class="slider"></div>
+          <div class="label-human">Human</div>
+          <div class="label-bot">Bot</div>
+        </label>
+        <label class="slider-label slider-2">
+          <input type="checkbox" id="X-O-toggle" />
+          <!-- <div class="slider"></div> -->
+          <div class="label-X">X</div>
+          <div class="label-O">O</div>
+        </label>
+        <h4>Remember that X always goes first</h4>
+        <a onclick="something">Start playing</a>
+      </div>
+    </section>
+    <main class="game hide">
       <div class="container">
         <div class="turn">
           <div class="player-X playing">
