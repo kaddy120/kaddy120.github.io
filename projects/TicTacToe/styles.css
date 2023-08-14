@@ -70,6 +70,7 @@ nav {
 
 .game {
   display: flex;
+  opacity: 1;
   justify-content: center;
   padding-block: 64px;
 }
@@ -252,6 +253,8 @@ button:hover {
 
 .hide {
   display: none;
+  visibility:hidden;
+  opacity: 0;
 }
 
 .score {
@@ -303,7 +306,7 @@ button:hover {
 
 .splash a {
   color: hsla(0, 0%, 100%, 1);
-  font-family: Roboto;
+  font-family: 'russo one';
   font-size: 32px;
   font-style: normal;
   font-weight: 500;
@@ -359,7 +362,6 @@ button:hover {
   width: 200px;
   left: 4px;
   top: 4px;
-  /* background-color: white; */
   border-radius: 33px;
   transition: 0.4s;
 }
@@ -402,4 +404,58 @@ input:checked + .slider:before {
 
 .slider-label {
   margin-bottom: 32px;
+}
+
+/* Slider 2 styles  */
+.slider-2 .slider:before {
+  width: 50%;
+  background: #fa8a2f;
+}
+
+.slider-2 input:checked ~ .slider:before {
+  background: #60a5fa;
+  transform: translateX(90px);
+}
+
+.slider-2 input:checked ~ .label-O {
+  color: #fbedde;
+}
+
+.slider-2 input:checked ~ .label-X {
+  color: #999;
+}
+
+.label-X {
+  color: #fbedde;
+}
+
+/* Win state styles */
+
+.win {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(28, 28, 28, 0.82);
+  /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); */
+}
+
+.win h1 {
+  color: #fff;
+  font-family: Russo One;
+  font-size: 128px;
+  margin-bottom: 32px;
+}
+
+.win p {
+  color: #bfc7ca;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
 }

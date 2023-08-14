@@ -26,6 +26,15 @@ function Player(){
 }
 
 
+function start(){
+  const _splash = document.querySelector('.splash')
+  const _game = document.querySelector('.game')
+
+  _splash.classList.add('hide')
+  _game.classList.remove('hide')
+  /* console.log("begin") */
+}
+
 // JavaScript to handle the sliding button toggle
 // JavaScript to handle the human-bot slider toggle
 const humanBotToggle = document.getElementById('human-bot-toggle');

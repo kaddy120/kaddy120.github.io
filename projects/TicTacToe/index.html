@@ -44,12 +44,12 @@
         </label>
         <label class="slider-label slider-2">
           <input type="checkbox" id="X-O-toggle" />
-          <!-- <div class="slider"></div> -->
+          <div class="slider"></div>
           <div class="label-X">X</div>
           <div class="label-O">O</div>
         </label>
         <h4>Remember that X always goes first</h4>
-        <a onclick="something">Start playing</a>
+        <a onclick="start()">Start playing</a>
       </div>
     </section>
     <main class="game hide">
@@ -135,6 +135,12 @@
         </div>
       </div>
     </main>
+    <section class="win ">
+      <div class="container">
+        <h1>&#127882; Player <span>X</span> Won!  &#127881;</h1>
+        <p>Click anywehere or press enter to play again.</p>
+      </div>
+    </section>
     <!-- The reason for placing the script down here is to ensure that the script is executed after the html body has been rendered to the doom. cute!!-->
     <script src="index.js"></script>
   </body>
