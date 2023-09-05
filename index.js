@@ -1,5 +1,3 @@
-function copyEmail() { }
-
 function toggleMenu() {
   const menu = document.getElementById('nav-list');
   console.log(menu, 'menu');
