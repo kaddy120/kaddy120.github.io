@@ -1,24 +1,13 @@
 # kaddy120.github.io
 
-## using Pandoc
-
-### installing Pandoc
-
-Find pandoc installation manual for different operating system 
-on [their website](https://pandoc.org/installing.html#windows).
-
-```bash
- $ pandoc md/keyboard\ remapping.md --template blog-template.html --no-highlight --from gfm -o blogs/output.html
-```
-
-I remove `-s` flag, short for `--standalone`, which means that pandoc will create a complete document with html header, meta-data, link. 
-
-### compile bookmarks
-
-```bash
- $ pandoc md/Good\ short\ reads.md --template bookmarks-template.html --no-highlight --from gfm --metadata title="Bookmarks" -o bookmarks.html
-```
-
-### The structure for blog 
-
-The blog should be placed in `md/` directory, and they name should follow the following conversion:
+## TODO
+- [ ] fix skills section by adding the title, and its link on the nav-bar.
+- [ ] add read me for the projects that i have added. 
+- [ ] add external link icon for before `Live`. 
+- [ ] fix restaurant page routing.
+- [ ] fix restaurant page responsiveness to different screens.
+- [ ] Fix tic-tac-toe bug: I remember seeing `undefined` showing to the tic-tac-toe screen.
+- [ ] add my bookmarks.
+- [ ] polish battleship UI.
+- [ ] add neovim readme.
+- [ ] Add the npm script for building the website.
