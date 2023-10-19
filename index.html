@@ -21,14 +21,28 @@
       referrerpolicy="no-referrer"
     />
     <link href="css/general.css" rel="stylesheet" />
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon-16x16.png"
+    />
     <link rel="manifest" href="/site.webmanifest" />
     <script src="index.js"></script>
   </head>
-  <body>
 
+  <body>
     <header>
       <div class="container">
         <div class="log">
@@ -144,28 +158,23 @@
           <div>
             <p class="body-2">
               I'm Kaddy Marindi, a final year Electrical Engineering student at
-              the University of Witwatersrand, and an aspiring software engineer
-              who is very enthusiastic about programming. I'm curious about how
-              things work, and I prefer learning from the ground up, delving
-              into computer science fundamentals like assembly, Operating
-              systems, and computer networks. My engineering background combined
-              with strong fundamentals of computer has fuel my ambition to
-              create great software products.
+              the University of Witwatersrand, and an aspiring software
+              engineer. I'm curious about how things work, and I prefer learning
+              from the ground up, delving into computer science fundamentals
+              like assembly, Operating systems, and computer networks. My
+              engineering background combined with strong fundamentals of
+              computer has fuel my ambition to create great software products.
             </p>
             <p class="body-2">
-              Since a young age, I've had a creative aptitude, excelling in
+              From a young age, I've had a creative aptitude, excelling in
               pencil drawing and painting. Today, I channel that creativity into
               programming.
             </p>
             <p class="body-2">
               I'm always eager to learn, and seeking new challenges that will
-              grow me as a software developer. Blogging has become my way of
-              improving communication skills and giving back to the community.
+              grow me as a software developer. I blog improving communication
+              skills and giving back to the community.
             </p>
-            <!-- <p> -->
-            <!--   Let's connect and explore the exciting world of software -->
-            <!--   engineering together! -->
-            <!-- </p> -->
           </div>
         </article>
         <hr />
@@ -283,6 +292,196 @@
     <section id="projects" class="projects">
       <div class="container">
         <h4 id="projects" class="section-title">projects</h4>
+
+        <div class="p-card-container">
+          <div class="p-card reverse">
+            <div class="p-details">
+              <h6 class="card-title">chalk.io</h6>
+              <ul class="tech-stack">
+                <li>React.js</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>MongoDB</li>
+                <li>Docker</li>
+                <li>Azure</li>
+                <li>Github Actions</li>
+              </ul>
+              <p>
+                A web application that allows users to create a resume that can
+                easily be modified to tailor to a specif job application. This
+                will easy the burden of maintain multiple version of your resume
+                by providing a single source of truth, where you can edit shared
+                information in multiple resume in one place.
+                <br />
+                <br />
+                <strong>Note: </strong>This project is still on its early stage
+                of development.
+              </p>
+              <ul class="project-view">
+                <!-- <li> -->
+                <!--   <a -->
+                <!--     target="_blank" -->
+                <!--     rel="noopener noreferrer" -->
+                <!--     class="view external-link" -->
+                <!--     href="javascript:void(0)" -->
+                <!--   > -->
+                <!--     Live</a -->
+                <!--   > -->
+                <!-- </li> -->
+                <li>
+                  <a
+                    target=" _blank"
+                    rel="noopener noreferrer"
+                    class="view"
+                    href="https://github.com/kaddy120/chalk"
+                    >GitHub</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="p-image">
+              <img class="card-img" src="./assets/work-inprogress.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="p-card-container">
+          <div class="p-card">
+            <div class="p-details">
+              <h6 class="card-title">Battleship</h6>
+              <ul class="tech-stack">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Jest</li>
+                <li>Node.js</li>
+                <li>Webpack</li>
+              </ul>
+              <p>
+                A battleship game built with vanilla Jasascript and developed
+                using TDD methodology. The player can select the position of the
+                ships and play against a computer.
+              </p>
+              <ul class="project-view">
+                <li>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="view"
+                    href="https://battleship-kadd120.vercel.app/"
+                    >Live</a
+                  >
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="view"
+                    href="https://github.com/kaddy120/battleship"
+                    >GitHub</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="p-image">
+              <img class="card-img" src="./assets/battleship.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="p-card-container">
+          <div class="p-card reverse">
+            <div class="p-details">
+              <h6 class="card-title">Restaurant Website</h6>
+              <ul class="tech-stack">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Node.js</li>
+                <li>Webpack</li>
+              </ul>
+              <p>
+                A single page application built with vanilla Javascript. The
+                idea behind the website was to understand the pain points of
+                managing an app state without a framework like react.js, and
+                implement routing usig javscript.
+              </p>
+              <ul class="project-view">
+                <li>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="view"
+                    href="https://restaurant-page-phi.vercel.app/"
+                    >Live
+                  </a>
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="view"
+                    href="https://github.com/kaddy120/Restaurant-page"
+                    >GitHub</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="p-image">
+              <img class="card-img" src="./assets/restaurant.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="p-card-container">
+          <div class="p-card">
+            <div class="p-details">
+              <h6 class="card-title">Tic-Tac-Toe</h6>
+              <ul class="tech-stack">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Node.js</li>
+                <li>Webpack</li>
+              </ul>
+              <p>
+                A Tic-tac-toe game with a multipler mode, where you can play
+                against another person, and single player mode against a
+                computer. The game keeps track of the player scores, wins and
+                draws.
+              </p>
+              <ul class="project-view">
+                <li>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="view"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://kaddy120.github.io/Projects/Tic-Tac-Toe/dist/index.html"
+                    >Live
+                  </a>
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="view"
+                    href="https://github.com/kaddy120/Tic-Tac-Toe"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >GitHub</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="p-image">
+              <img class="card-img" src="./assets/tic-tac-toe.jpg" alt="" />
+            </div>
+          </div>
+        </div>
         <div class="p-card-container">
           <div class="p-card reverse">
             <div class="p-details">
@@ -302,14 +501,30 @@
                 computationally intensive operations -- namely, matrix filling,
                 LU decomposition, and matrix solution solve -- are analyzed and
                 parallelized. Notably, an eight-node implementation yields a 4
-                times performance gain. TK call to action.
+                times performance gain.
               </p>
               <ul class="project-view">
                 <li>
-                  <a class="view" href="assets/lab-project.pdf">Paper </a>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="view"
+                    href="assets/lab-project.pdf"
+                    >Paper
+                  </a>
                 </li>
                 <li>
-                  <a class="view" href="">GitHub</a>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="view"
+                    href=""
+                    >GitHub</a
+                  >
                 </li>
               </ul>
             </div>
@@ -340,11 +555,18 @@
                 and South Africa, effective indicators have been discovered.
                 Additionally, the SEI[H]RD compartmental model allows for a
                 comprehensive evaluation of hospital capacity, considering
-                regular beds, ICU beds, and ventilator beds. TK call for action.
+                regular beds, ICU beds, and ventilator beds.
               </p>
               <ul class="project-view">
                 <li>
-                  <a class="view" href="assets/codiv-19.pdf"> Paper </a>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="view"
+                    href="assets/codiv-19.pdf"
+                  >
+                    Paper
+                  </a>
                 </li>
               </ul>
             </div>
@@ -375,6 +597,8 @@
               <ul class="project-view">
                 <li class="view">
                   <a
+                    target="_blank"
+                    rel="noopener noreferrer"
                     class="view"
                     href="https://github.com/kaddy120/Super-Pac-Man-game"
                     >GitHub</a
