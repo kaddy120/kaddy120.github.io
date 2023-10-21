@@ -1,298 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Kaddy Marindi</title>
-    <meta charet="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="css/style.css" rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Fira Mono"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link href="css/general.css" rel="stylesheet" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="assets/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/site.webmanifest" />
-    <script src="index.js"></script>
-  </head>
 
-  <body>
-    <header>
-      <div class="container">
-        <div class="log">
-          <h6 class="log_kaddy">Kaddy</h6>
-          <h6 class="log_marindi">Marindi</h6>
+<head>
+  <title>Kaddy Marindi</title>
+  <meta charet="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Fira Mono" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="css/general.css" rel="stylesheet" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <script src="index.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="log">
+        <h6 class="log_kaddy">Kaddy</h6>
+        <h6 class="log_marindi">Marindi</h6>
+      </div>
+      <!-- <nav> -->
+      <nav role="navigation" class="burger">
+        <!-- <ul class="nav"> -->
+        <button onclick="toggleMenu()" class="hamburger-menu">
+          <!-- material icons https://material.io/resources/icons/ -->
+          <i class="fa-solid fa-bars menuIcon"></i>
+          <i class="fa-solid fa-xmark closeIcon"></i>
+        </button>
+        <!-- <ul class="nav nav-flex"> -->
+        <ul id="nav-list" class="nav nav-flex menu">
+          <li><a class="nav-item" href="#home">Home</a></li>
+          <li><a class="nav-item" href="#about">About</a></li>
+          <li><a class="nav-item" href="#skills">Skills</a></li>
+          <li><a class="nav-item" href="#projects">Projects</a></li>
+          <li>
+            <a class="nav-item" href="/blog.html">Blog</a>
+          </li>
+          <li class="nav_item-resume">
+            <a class="nav-item secondary-bt" href="assets/RusselResume.pdf" target="_blank"
+              rel="noopener noreferrer">Resume</a>
+          </li>
+          <li>
+            <ul class="nav-item_socials nav-flex">
+              <li>
+                <a href="https://github.com/kaddy120" target="_blank" rel="noopener noreferrer">
+                  <i class="fab icon fa-github-square"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/kaddy-marindi" target="_blank" rel="noopener noreferrer">
+                  <i class="fab icon fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- </nav> -->
+  </header>
+
+  <section id="home" class="home">
+    <div class="container">
+      <div class="home-container">
+        <div class="profile-bio">
+          <p class="profile-greetings">
+            $ Hi there, I'm <span class="profile-grettings_cursor">|</span>
+          </p>
+          <div class="profile-tagline">
+            <h1 class="profile-name">Kaddy Marindi</h1>
+            <h3>Junior software engineer</h3>
+          </div>
+          <p class="profile-tagline_statement">
+            An aspiring software develop who can hack both front-end and
+            backend, and loves building stuff.
+          </p>
+          <p class="location body-2">
+            <i class="fa-solid fa-location-dot icon-color"></i> South Africa,
+            Limpopo
+          </p>
         </div>
-        <!-- <nav> -->
-        <nav role="navigation" class="burger">
-          <!-- <ul class="nav"> -->
-          <button onclick="toggleMenu()" class="hamburger-menu">
-            <!-- material icons https://material.io/resources/icons/ -->
-            <i class="fa-solid fa-bars menuIcon"></i>
-            <i class="fa-solid fa-xmark closeIcon"></i>
+        <div class="profile-pic">
+          <picture class="profile-pic-container">
+            <div class="blue"></div>
+            <div class="orange"></div>
+            <img src="./use for portfolio.png" alt="my profile picture in black and white." />
+          </picture>
+        </div>
+      </div>
+      <div class="home-action-btns">
+        <a href="#projects" download>
+          <button class="primary-bt" type="button">
+            View Projects
+            <i class="fa-sharp fa-regular fa-folder-arrow-down"></i>
           </button>
-          <!-- <ul class="nav nav-flex"> -->
-          <ul id="nav-list" class="nav nav-flex menu">
-            <li><a class="nav-item" href="#home">Home</a></li>
-            <li><a class="nav-item" href="#about">About</a></li>
-            <li><a class="nav-item" href="#projects">Projects</a></li>
-            <li>
-              <a class="nav-item" href="/blog.html">Blog</a>
-            </li>
-            <li class="nav_item-resume">
-              <a
-                class="nav-item secondary-bt"
-                href="assets/RusselResume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Resume</a
-              >
-            </li>
-            <li>
-              <ul class="nav-item_socials nav-flex">
-                <li>
-                  <a
-                    href="https://github.com/kaddy120"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i class="fab icon fa-github-square"></i>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/in/kaddy-marindi"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i class="fab icon fa-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
-            </li>
+        </a>
+        <a class="nav-item btn secondary-bt" href="assets/RusselResume.pdf" target="_blank"
+          rel="noopener noreferrer">Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h4 class="section-title">About Me</h4>
+      <article class="about-statement">
+        <div>
+          <p class="body-2">
+            I'm Kaddy Marindi, a final year Electrical Engineering student at
+            the University of Witwatersrand, and an aspiring software
+            engineer. I'm curious about how things work, and I prefer learning
+            from the ground up, delving into computer science fundamentals
+            like assembly, Operating systems, and computer networks. My
+            engineering background combined with strong fundamentals of
+            computer has fuel my ambition to create great software products.
+          </p>
+          <p class="body-2">
+            From a young age, I've had a creative aptitude, excelling in
+            pencil drawing and painting. Today, I channel that creativity into
+            programming.
+          </p>
+          <p class="body-2">
+            I'm always eager to learn, and seeking new challenges that will
+            grow me as a software developer. I blog improving communication
+            skills and giving back to the community.
+          </p>
+        </div>
+      </article>
+      <hr />
+      <article class="misc">
+        <h4 class="section-title">Misc.</h4>
+        <div class="misc-statement">
+          <div class="misc-statement_item">
+            <i class="fa-solid fa-book-open"></i>
+            <p class="body-2">
+              love reading classic literature and Tech books. Check my
+              <a href="">reading list</a>.
+            </p>
+          </div>
+          <div class="misc-statement_item">
+            <i class="fa-solid fa-bookmark"></i>
+            <p class="body-2">
+              I <a href="/blogs/bookmarks.html">bookmark</a> useful learning
+              resource and blogs.
+            </p>
+          </div>
+          <div class="misc-statement_item">
+            <img src="assets/neovim.svg" alt="" style="height: 24px; width: 24px" />
+            <p class="body-2">
+              neo<strong>Vim</strong> is my favourite text editor for writing
+              code and notes. You can find my neovim config
+              <a href="">here</a>.
+            </p>
+          </div>
+          <div class="misc-statement_item">
+            <i class="fa-regular fa-keyboard"></i>
+            <p class="body-2">
+              An average
+              <a href="https://en.wikipedia.org/wiki/Touch_typing">touch typing</a>
+              speed of <strong>65WPM</strong> with an accuracy above
+              <strong>95%</strong> for all keys.
+            </p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="skills" class="skills">
+    <div class="blue-layer"></div>
+    <div class="container">
+      <h4 class="section-title">Skills</h4>
+      <div class="skills-container">
+        <!-- To-do: Use the logs for the technologies -->
+        <!-- web skills  -->
+        <div class="skill-card">
+          <h6 class="card-title skills-title">Web Development</h6>
+          <ul>
+            <li class="skill">JavaScript</li>
+            <li class="skill">HTML</li>
+            <li class="skill">CSS</li>
+            <li class="skill">React.js</li>
+            <li class="skill">Node.js</li>
+            <li class="skill">Express.js</li>
+            <li class="skill">RESTful APIs</li>
+            <li class="skill">MongoDB</li>
+            <li class="skill">Responsive Design</li>
           </ul>
-        </nav>
-      </div>
-      <!-- </nav> -->
-    </header>
-
-    <section id="home" class="home">
-      <div class="container">
-        <div class="home-container">
-          <div class="profile-bio">
-            <p class="profile-greetings">
-              $ Hi there, I'm <span class="profile-grettings_cursor">|</span>
-            </p>
-            <div class="profile-tagline">
-              <h1 class="profile-name">Kaddy Marindi</h1>
-              <h3>Junior software engineer</h3>
-            </div>
-            <p class="profile-tagline_statement">
-              An aspiring software develop who can hack both front-end and
-              backend, and loves building stuff.
-            </p>
-            <p class="location body-2">
-              <i class="fa-solid fa-location-dot icon-color"></i> South Africa,
-              Limpopo
-            </p>
-          </div>
-          <div class="profile-pic">
-            <picture class="profile-pic-container">
-              <div class="blue"></div>
-              <div class="orange"></div>
-              <img
-                src="./use for portfolio.png"
-                alt="my profile picture in black and white."
-              />
-            </picture>
-          </div>
         </div>
-        <div class="home-action-btns">
-          <a href="#projects" download>
-            <button class="primary-bt" type="button">
-              View Projects
-              <i class="fa-sharp fa-regular fa-folder-arrow-down"></i>
-            </button>
-          </a>
-          <a
-            class="nav-item btn secondary-bt"
-            href="assets/RusselResume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Resume</a
-          >
+        <!-- To-do: Use the logs for the technologies -->
+        <!-- system stuff -->
+        <div class="skill-card">
+          <h6 class="card-title skills-title">Software Development</h6>
+          <ul>
+            <li class="skill">C/C++</li>
+            <li class="skill">OOP</li>
+            <li class="skill">Unit Testing</li>
+            <li class="skill">Data Structure & Algorithms</li>
+            <li class="skill">Linux system programming</li>
+          </ul>
+        </div>
+        <!-- To-do: Use the logs for the technologies -->
+        <!-- tools  -->
+        <div class="skill-card">
+          <h6 class="card-title skills-title">Dev Tools</h6>
+          <ul>
+            <li class="skill">GitHub && git</li>
+            <li class="skill">Webpack</li>
+            <li class="skill">Make</li>
+            <li class="skill">DevTools</li>
+            <li class="skill">Vim (text editor)</li>
+            <li class="skill">Bash</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <h6 class="card-title skills-title">Cloud and deployment</h6>
+          <ul>
+            <li class="skill">Azure</li>
+            <li class="skill">Unix/Linux OS</li>
+            <li class="skill">Computer Networks</li>
+            <li class="skill">Docker</li>
+            <li class="skill">CI/CD with Github Actions</li>
+          </ul>
         </div>
       </div>
-    </section>
+      <!-- <div class="decorate"> -->
+      <!--   <div class="decorate_blue-first"></div> -->
+      <!--   <div class="decorate_blue-second"></div> -->
+      <!--   <div class="decorate_blue-big"></div> -->
+      <!--   <div class="decorate_orange-big"></div> -->
+      <!-- </div> -->
+    </div>
+  </section>
 
-    <section id="about" class="about">
-      <div class="container">
-        <h4 class="section-title">About Me</h4>
-        <article class="about-statement">
-          <div>
-            <p class="body-2">
-              I'm Kaddy Marindi, a final year Electrical Engineering student at
-              the University of Witwatersrand, and an aspiring software
-              engineer. I'm curious about how things work, and I prefer learning
-              from the ground up, delving into computer science fundamentals
-              like assembly, Operating systems, and computer networks. My
-              engineering background combined with strong fundamentals of
-              computer has fuel my ambition to create great software products.
-            </p>
-            <p class="body-2">
-              From a young age, I've had a creative aptitude, excelling in
-              pencil drawing and painting. Today, I channel that creativity into
-              programming.
-            </p>
-            <p class="body-2">
-              I'm always eager to learn, and seeking new challenges that will
-              grow me as a software developer. I blog improving communication
-              skills and giving back to the community.
-            </p>
-          </div>
-        </article>
-        <hr />
-        <article class="misc">
-          <h4 class="section-title">Misc.</h4>
-          <div class="misc-statement">
-            <div class="misc-statement_item">
-              <i class="fa-solid fa-book-open"></i>
-              <p class="body-2">
-                love reading classic literature and Tech books. Check my
-                <a href="">reading list</a>.
-              </p>
-            </div>
-            <div class="misc-statement_item">
-              <i class="fa-solid fa-bookmark"></i>
-              <p class="body-2">
-                I <a href="/blogs/bookmarks.html">bookmark</a> useful learning
-                resource and blogs.
-              </p>
-            </div>
-            <div class="misc-statement_item">
-              <img
-                src="assets/neovim.svg"
-                alt=""
-                style="height: 24px; width: 24px"
-              />
-              <p class="body-2">
-                neo<strong>Vim</strong> is my favourite text editor for writing
-                code and notes. You can find my neovim config
-                <a href="">here</a>.
-              </p>
-            </div>
-            <div class="misc-statement_item">
-              <i class="fa-regular fa-keyboard"></i>
-              <p class="body-2">
-                An average
-                <a href="https://en.wikipedia.org/wiki/Touch_typing"
-                  >touch typing</a
-                >
-                speed of <strong>65WPM</strong> with an accuracy above
-                <strong>95%</strong> for all keys.
-              </p>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="skills">
-      <div class="container">
-        <!-- <h2 id="skills" class="section-title">Skills</h2> -->
-        <div class="skills-container">
-          <!-- To-do: Use the logs for the technologies -->
-          <!-- web skills  -->
-          <div class="skill-card">
-            <h6 class="card-title skills-title">Web Development</h6>
-            <ul>
-              <li class="skill">JavaScript</li>
-              <li class="skill">HTML</li>
-              <li class="skill">CSS</li>
-              <li class="skill">React.js</li>
-              <li class="skill">Node.js</li>
-              <li class="skill">Express.js</li>
-              <li class="skill">RESTful APIs</li>
-              <li class="skill">MongoDB</li>
-              <li class="skill">Responsive Design</li>
-            </ul>
-          </div>
-          <!-- To-do: Use the logs for the technologies -->
-          <!-- system stuff -->
-          <div class="skill-card">
-            <h6 class="card-title skills-title">Software Development</h6>
-            <ul>
-              <li class="skill">C/C++</li>
-              <li class="skill">OOP</li>
-              <li class="skill">Unit Testing</li>
-              <li class="skill">Data Structure & Algorithms</li>
-              <li class="skill">Linux system programming</li>
-            </ul>
-          </div>
-          <!-- To-do: Use the logs for the technologies -->
-          <!-- tools  -->
-          <div class="skill-card">
-            <h6 class="card-title skills-title">Dev Tools</h6>
-            <ul>
-              <li class="skill">GitHub && git</li>
-              <li class="skill">Webpack</li>
-              <li class="skill">Make</li>
-              <li class="skill">DevTools</li>
-              <li class="skill">Vim (text editor)</li>
-              <li class="skill">Bash</li>
-            </ul>
-          </div>
-
-          <div class="skill-card">
-            <h6 class="card-title skills-title">Cloud and deployment</h6>
-            <ul>
-              <li class="skill">Azure</li>
-              <li class="skill">Unix/Linux OS</li>
-              <li class="skill">Computer Networks</li>
-              <li class="skill">Docker</li>
-              <li class="skill">CI/CD with Github Actions</li>
-            </ul>
-          </div>
-        </div>
-        <!-- <div class="decorate"> -->
-        <!--   <div class="decorate_blue-first"></div> -->
-        <!--   <div class="decorate_blue-second"></div> -->
-        <!--   <div class="decorate_blue-big"></div> -->
-        <!--   <div class="decorate_orange-big"></div> -->
-        <!-- </div> -->
-      </div>
-    </section>
-
-    <section id="projects" class="projects">
-      <div class="container">
-        <h4 id="projects" class="section-title">projects</h4>
-
+  <section id="projects" class="projects">
+    <div class="container">
+      <h4 id="projects" class="section-title">projects</h4>
+      <div class="projects-list">
         <div class="p-card-container">
           <div class="p-card reverse">
             <div class="p-details">
@@ -309,15 +261,15 @@
                 <li>Github Actions</li>
               </ul>
               <p>
-                A web application that allows users to create a resume that can
-                easily be modified to tailor to a specif job application. This
-                will easy the burden of maintain multiple version of your resume
-                by providing a single source of truth, where you can edit shared
-                information in multiple resume in one place.
+                A web application that allows users to create a resume that
+                can easily be modified to tailor to a specif job application.
+                This will easy the burden of maintain multiple version of your
+                resume by providing a single source of truth, where you can
+                edit shared information in multiple resume in one place.
                 <br />
                 <br />
-                <strong>Note: </strong>This project is still on its early stage
-                of development.
+                <strong>Note: </strong>This project is still on its early
+                stage of development.
               </p>
               <ul class="project-view">
                 <!-- <li> -->
@@ -331,13 +283,8 @@
                 <!--   > -->
                 <!-- </li> -->
                 <li>
-                  <a
-                    target=" _blank"
-                    rel="noopener noreferrer"
-                    class="view"
-                    href="https://github.com/kaddy120/chalk"
-                    >GitHub</a
-                  >
+                  <a target=" _blank" rel="noopener noreferrer" class="view"
+                    href="https://github.com/kaddy120/chalk">GitHub</a>
                 </li>
               </ul>
             </div>
@@ -361,27 +308,17 @@
               </ul>
               <p>
                 A battleship game built with vanilla Jasascript and developed
-                using TDD methodology. The player can select the position of the
-                ships and play against a computer.
+                using TDD methodology. The player can select the position of
+                the ships and play against a computer.
               </p>
               <ul class="project-view">
                 <li>
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="view"
-                    href="https://battleship-kadd120.vercel.app/"
-                    >Live</a
-                  >
+                  <a target="_blank" rel="noopener noreferrer" class="view"
+                    href="https://battleship-kadd120.vercel.app/">Live</a>
                 </li>
                 <li>
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="view"
-                    href="https://github.com/kaddy120/battleship"
-                    >GitHub</a
-                  >
+                  <a target="_blank" rel="noopener noreferrer" class="view"
+                    href="https://github.com/kaddy120/battleship">GitHub</a>
                 </li>
               </ul>
             </div>
@@ -410,22 +347,13 @@
               </p>
               <ul class="project-view">
                 <li>
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="view"
-                    href="https://restaurant-page-phi.vercel.app/"
-                    >Live
+                  <a target="_blank" rel="noopener noreferrer" class="view"
+                    href="https://restaurant-page-phi.vercel.app/">Live
                   </a>
                 </li>
                 <li>
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="view"
-                    href="https://github.com/kaddy120/Restaurant-page"
-                    >GitHub</a
-                  >
+                  <a target="_blank" rel="noopener noreferrer" class="view"
+                    href="https://github.com/kaddy120/Restaurant-page">GitHub</a>
                 </li>
               </ul>
             </div>
@@ -454,26 +382,13 @@
               </p>
               <ul class="project-view">
                 <li>
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="view"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://kaddy120.github.io/Projects/Tic-Tac-Toe/dist/index.html"
-                    >Live
+                  <a target="_blank" rel="noopener noreferrer" class="view" target="_blank" rel="noopener noreferrer"
+                    href="https://kaddy120.github.io/Projects/Tic-Tac-Toe/dist/index.html">Live
                   </a>
                 </li>
                 <li>
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="view"
-                    href="https://github.com/kaddy120/Tic-Tac-Toe"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >GitHub</a
-                  >
+                  <a target="_blank" rel="noopener noreferrer" class="view"
+                    href="https://github.com/kaddy120/Tic-Tac-Toe" target="_blank" rel="noopener noreferrer">GitHub</a>
                 </li>
               </ul>
             </div>
@@ -495,45 +410,28 @@
               </ul>
               <p>
                 This project parallelizes the Electromagnetic Numerical Code
-                (NEC) to boost computational performance. By leveraging a hybrid
-                approach with OpenMP and MPI libraries, the NEC2++ code is
-                optimized for shared and distributed memory parallelization. The
-                computationally intensive operations -- namely, matrix filling,
-                LU decomposition, and matrix solution solve -- are analyzed and
-                parallelized. Notably, an eight-node implementation yields a 4
-                times performance gain.
+                (NEC) to boost computational performance. By leveraging a
+                hybrid approach with OpenMP and MPI libraries, the NEC2++ code
+                is optimized for shared and distributed memory
+                parallelization. The computationally intensive operations --
+                namely, matrix filling, LU decomposition, and matrix solution
+                solve -- are analyzed and parallelized. Notably, an eight-node
+                implementation yields a 4 times performance gain.
               </p>
               <ul class="project-view">
                 <li>
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="view"
-                    href="assets/lab-project.pdf"
-                    >Paper
+                  <a target="_blank" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" class="view"
+                    href="assets/lab-project.pdf">Paper
                   </a>
                 </li>
                 <li>
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="view"
-                    href=""
-                    >GitHub</a
-                  >
+                  <a target="_blank" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" class="view"
+                    href="">GitHub</a>
                 </li>
               </ul>
             </div>
             <div class="p-image">
-              <img
-                class="card-img"
-                src="./assets/dt2-racks-from-front.jpg"
-                alt=""
-              />
+              <img class="card-img" src="./assets/dt2-racks-from-front.jpg" alt="" />
             </div>
           </div>
         </div>
@@ -548,23 +446,19 @@
                 <li>Python</li>
               </ul>
               <p>
-                This project aims to identify two significant tipping points in
-                the COVID-19 pandemic: (1) the (re-)emergence of wave outbreaks
-                and (2) the strain on hospital capacity. By utilizing early
-                warning signals (EWS) and analyzing real-time data from Italy
-                and South Africa, effective indicators have been discovered.
-                Additionally, the SEI[H]RD compartmental model allows for a
-                comprehensive evaluation of hospital capacity, considering
-                regular beds, ICU beds, and ventilator beds.
+                This project aims to identify two significant tipping points
+                in the COVID-19 pandemic: (1) the (re-)emergence of wave
+                outbreaks and (2) the strain on hospital capacity. By
+                utilizing early warning signals (EWS) and analyzing real-time
+                data from Italy and South Africa, effective indicators have
+                been discovered. Additionally, the SEI[H]RD compartmental
+                model allows for a comprehensive evaluation of hospital
+                capacity, considering regular beds, ICU beds, and ventilator
+                beds.
               </p>
               <ul class="project-view">
                 <li>
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="view"
-                    href="assets/codiv-19.pdf"
-                  >
+                  <a target="_blank" rel="noopener noreferrer" class="view" href="assets/codiv-19.pdf">
                     Paper
                   </a>
                 </li>
@@ -588,88 +482,73 @@
               <p>
                 Super-game is written in c++17 and uses SFML v2.5.1. The game
                 codebase is modularized into three layers: presentation, data
-                and logic layer. SFML is only used for graphics, the game logic
-                classes do not use any SFML. All game objects are modeled as
-                entities. The game solution achieved basic functionality and two
-                major features. Scores. The solution presented is tested using
-                Doctest framework to verify the accuracy of the solution
+                and logic layer. SFML is only used for graphics, the game
+                logic classes do not use any SFML. All game objects are
+                modeled as entities. The game solution achieved basic
+                functionality and two major features. Scores. The solution
+                presented is tested using Doctest framework to verify the
+                accuracy of the solution
               </p>
               <ul class="project-view">
                 <li class="view">
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="view"
-                    href="https://github.com/kaddy120/Super-Pac-Man-game"
-                    >GitHub</a
-                  >
+                  <a target="_blank" rel="noopener noreferrer" class="view"
+                    href="https://github.com/kaddy120/Super-Pac-Man-game">GitHub</a>
                 </li>
               </ul>
             </div>
             <div class="p-image">
               <!-- <img src="" alt=""> -->
-              <iframe
-                height="100%"
-                src="https://www.youtube.com/embed/JrmWflmov2U"
-                title="YouTube video player"
+              <iframe height="100%" src="https://www.youtube.com/embed/JrmWflmov2U" title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-              ></iframe>
+                allowfullscreen></iframe>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <footer class="mv-footer">
-      <div class="container">
-        <div class="footer_flex">
-          <div class="footer-about">
-            <h6>Kaddy's portfolio</h6>
-            <p>Kaddy Marindi</p>
-            <p>kad.marindi@gmail.com</p>
-          </div>
-          <div class="footer-socials">
-            <h6>Find me:</h6>
-            <ul>
-              <li>
-                <a
-                  href="https://github.com/kaddy120"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i class="fab icon fa-github-square"></i>
-                  https://github.com/kaddy120
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/kaddy-marindi"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i class="fab icon fa-linkedin"></i
-                  >https://www.linkedin.com/in/kaddy-marindi
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-links">
-            <h6>Site Links</h6>
-            <ul>
-              <li><a href="#about">About</a></li>
-              <li><a href="/blog.html">Blog</a></li>
-              <li><a href="">resume</a></li>
-            </ul>
-          </div>
+    </div>
+  </section>
+  <footer class="mv-footer">
+    <div class="container">
+      <div class="footer_flex">
+        <div class="footer-about">
+          <h6>Kaddy's portfolio</h6>
+          <p>Kaddy Marindi</p>
+          <p>kad.marindi@gmail.com</p>
         </div>
-        <div class="footer-blog-tagline">
-          <p>
-            In my <a href="/blog.html">blog</a>, I write about tech stuff that
-            I'm currently learning.
-          </p>
+        <div class="footer-socials">
+          <h6>Find me:</h6>
+          <ul>
+            <li>
+              <a href="https://github.com/kaddy120" target="_blank" rel="noopener noreferrer">
+                <i class="fab icon fa-github-square"></i>
+                https://github.com/kaddy120
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/kaddy-marindi" target="_blank" rel="noopener noreferrer">
+                <i class="fab icon fa-linkedin"></i>https://www.linkedin.com/in/kaddy-marindi
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h6>Site Links</h6>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="/blog.html">Blog</a></li>
+            <li><a href="">resume</a></li>
+          </ul>
         </div>
       </div>
-    </footer>
-  </body>
+      <div class="footer-blog-tagline">
+        <p>
+          In my <a href="/blog.html">blog</a>, I write about tech stuff that
+          I'm currently learning.
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
