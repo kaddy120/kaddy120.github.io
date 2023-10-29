@@ -127,10 +127,6 @@
     </header>
     <main class="blog-layout">
       <article class="markdown-body"><h1 id="key-mapping-in-linux-for-proficient-typing">Key mapping in Linux for proficient typing.</h1>
-<!-- <span style="color: #999999;">08 Jul, 2023 - Kaddy Marindi</span> -->
-<!---->
-
-
 <p>For heavy computer users, a keyboard is often a primary interface for interacting with the system when typing, navigating, and using shortcuts. Some of the most frequently used keys such as Esc, Ctrl, and arrow keys are far from the home row keys. We have to overextend our fingers to press them; consequently, causing errors that can disrupt the typing flow and reduce productivity.</p>
 <p>In this article, I&#39;ll show you how to remap Esc, Ctrl and arrows keys in Linux, X windows systems, to easily accessible locations on the keyboard using two tools: <code>xmodmap</code> and <code>xcape</code>. If you are getting confused when following along, refer to my <code>xmodmap</code> configuration on <a href="https://github.com/kaddy120/dotfile/blob/master/.xmodmap">GitHub</a>, which most part of this article is base on. </p>
 <h2 id="understanding-xmodmap-key-mapping-concepts">Understanding xmodmap key mapping concepts</h2>
@@ -160,7 +156,7 @@ mod3
 mod4        Super_L (0x25),  Super_R (0x86),  Hyper_L (0xcf)
 mod5        ISO_Level3_Shift (0x5c),  Mode_switch (0xcb)
 </code></pre>
-<p>Okay modifier are tricky bussiness. YOu out to explain them better, most escpecially here..........<br>This is a list of keys that trigger the modifier names on the left. The left You can add, remove, or clear the key(s) assigned to the modifier.</p>
+<p>This is a list of keys that trigger the modifier names on the left. The left You can add, remove, or clear the key(s) assigned to the modifier.</p>
 <h2 id="keymapping-using-xmodmap">Keymapping using xmodmap</h2>
 <h3 id="precaution">precaution</h3>
 <p>The idea of manually key mapping might seem daunting at first owing to a fear of rendering your keyboard dysfunctional if you make a mistake. However, by default, the key mappings are not persisted when the system reboots, so there is nothing to worry about. Nevertheless, you don&#39;t want to keep on rebooting your system every time you make a mistake.</p>

@@ -457,7 +457,7 @@ body {
   font-size: var(--step-1);
   line-height: 1.5;
   letter-spacing: 0.25px;
-  max-inline-size: 70ch;
+  max-inline-size: 75ch;
 }
 
 .markdown-body blockquote {

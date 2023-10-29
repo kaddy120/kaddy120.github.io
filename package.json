@@ -4,7 +4,9 @@
   "description": "## using Pandoc",
   "main": "index.js",
   "scripts": {
-    "test": "ls"
+    "dev": "live-server --port=8080 --entry-file=index.html",
+    "prebuild": "cp ../Notes/'Good short reads.md' md/bookmarks.md",
+    "build": "node pug-index.js"
   },
   "repository": {
     "type": "git",
@@ -17,16 +19,25 @@
     "url": "https://github.com/kaddy120/kaddy120.github.io/issues"
   },
   "homepage": "https://github.com/kaddy120/kaddy120.github.io#readme",
-  "devDependencies": {
-    "css-loader": "^6.8.1",
+  "dependencies": {
     "markdown-toc": "^1.2.0",
     "marked": "^5.1.2",
     "marked-gfm-heading-id": "^3.0.4",
-    "pug": "^3.0.2",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "css-loader": "^6.8.1",
+    "eslint": "^8.51.0",
     "style-loader": "^3.3.3",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1",
-    "yaml": "^2.3.1"
+    "yaml": "^2.3.1",
+    "@types/jest": "^29.5.5",
+    "@typescript-eslint/eslint-plugin": "^6.8.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-jest": "^27.4.0",
+    "jest": "^29.6.4"
   }
 }

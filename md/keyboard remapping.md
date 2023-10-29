@@ -1,9 +1,5 @@
 # Key mapping in Linux for proficient typing. 
 
-<!-- <span style="color: #999999;">08 Jul, 2023 - Kaddy Marindi</span> -->
-<!---->
-
-
 For heavy computer users, a keyboard is often a primary interface for interacting with the system when typing, navigating, and using shortcuts. Some of the most frequently used keys such as Esc, Ctrl, and arrow keys are far from the home row keys. We have to overextend our fingers to press them; consequently, causing errors that can disrupt the typing flow and reduce productivity.
 
 In this article, I'll show you how to remap Esc, Ctrl and arrows keys in Linux, X windows systems, to easily accessible locations on the keyboard using two tools: `xmodmap` and `xcape`. If you are getting confused when following along, refer to my `xmodmap` configuration on [GitHub](https://github.com/kaddy120/dotfile/blob/master/.xmodmap), which most part of this article is base on. 
@@ -43,9 +39,6 @@ mod3
 mod4        Super_L (0x25),  Super_R (0x86),  Hyper_L (0xcf)
 mod5        ISO_Level3_Shift (0x5c),  Mode_switch (0xcb)
 ```
-
-
-Okay modifier are tricky bussiness. YOu out to explain them better, most escpecially here..........
 This is a list of keys that trigger the modifier names on the left. The left You can add, remove, or clear the key(s) assigned to the modifier.
 
 ## Keymapping using xmodmap
