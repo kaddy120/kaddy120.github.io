@@ -18,14 +18,25 @@ to the world about what is going on in professional life.
 - [X] Organize my workspaces
 - [ ] proof reading my portfolio site. 
 - [X] add project descriptions.
-- [ ] add my bookmarks.
-- [ ] fix a typo in my blog.
-
-- [ ] give credit to those who have helped in my projects.
+- [X] add my bookmarks.
+- [X] fix a typo in my blog.
 - [ ] fix restaurant page routing.
 - [ ] fix restaurant page responsiveness to different screens.
 - [ ] Fix tic-tac-toe bug: I remember seeing `undefined` showing to the tic-tac-toe screen.
 - [ ] polish battleship UI.
-- [ ] Add the npm script for building the website.
+- [X] Add the npm script for building the website.
+
 - [ ] add icon for external link, before `Live`. 
+- [ ] give credit to those who have helped in my projects.
+    - [ ] Battleship game
+    - [ ] Tic-Tac-Toe game
+    - [ ] Restaurant-page 
+    - [ ] Chalk.io
+    - [ ] Liso-web server
+    - [ ] Wits at the edge
+    - [ ] Parallelizing NEC2++
+    - [ ] kaddy120.github.com
+    - [ ] neovim.config
+    - [ ] github-markdown-css
+    - [ ] Super Pac-man
 - [ ] add twitter and email links.
