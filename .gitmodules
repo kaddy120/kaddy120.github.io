@@ -1,9 +1,9 @@
 [submodule "projects/--force"]
 	path = projects/--force
 	url = git@github.com:kaddy120/Tic-Tac-Toe.git
-[submodule "Projects/Tic-Tac-Toe"]
-	path = Projects/Tic-Tac-Toe
-	url = git@github.com:kaddy120/Tic-Tac-Toe.git
 [submodule "Projects/Vannila-spa"]
 	path = Projects/Vannila-spa
 	url = git@github.com:kaddy120/Restaurant-page.git
+[submodule "Projects/Tic-Tac-Toe"]
+	path = Projects/Tic-Tac-Toe
+	url = git@github.com:kaddy120/Tic-Tac-Toe.git
