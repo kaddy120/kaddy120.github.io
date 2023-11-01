@@ -20,9 +20,9 @@ to the world about what is going on in professional life.
 - [X] add project descriptions.
 - [X] add my bookmarks.
 - [X] fix a typo in my blog.
-- [ ] fix restaurant page routing.
+- [X] fix restaurant page routing.
 - [ ] fix restaurant page responsiveness to different screens.
-- [ ] Fix tic-tac-toe bug: I remember seeing `undefined` showing to the tic-tac-toe screen.
+- [X] Fix tic-tac-toe bug: I remember seeing `undefined` showing to the tic-tac-toe screen. Ohh, so undefined happens when you try to click a square that is already played.
 - [ ] polish battleship UI.
 - [X] Add the npm script for building the website.
 
