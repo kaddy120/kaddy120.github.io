@@ -8,7 +8,8 @@
 8. [How intelligence leads to avoidance](https://www.youtube.com/watch?v=Hq32ZIz1EBE) a YouTube video by Dr. K, Harvard Psychiatrist.
 10. [Creating vs learning](https://www.quora.com/Do-you-enjoy-learning-more-or-creating-What-are-you-learning-and-what-are-you-creating)
 How to be a great programmer | John Carmack and Lex Fridman
-2. [Boost your productivity: Cripple your technology](https://matt.might.net/articles/cripple-your-technology/) by Mattmight is about deliberately limiting the capabilities of your technology to reduce procrastination.
+11. [Boost your productivity: Cripple your technology](https://matt.might.net/articles/cripple-your-technology/) by Mattmight is about deliberately limiting the capabilities of your technology to reduce procrastination.
+12. [What Is Eat the Frog? A Dead Simple System for Productivity Minimalists](https://todoist.com/productivity-methods/eat-the-frog) speaks to doing your most difficult and important task first everyday.
 
 ## CSS 
 1. [Modern Fluid Typography Using CSS Clamp — Smashing Magazine ](https://www.smashingmagazine.com/2022/01/modern-fluid-typography-css-clamp/)
@@ -42,12 +43,37 @@ How to be a great programmer | John Carmack and Lex Fridman
 2. [Best practices for writing code comments - Stack Overflow](https://stackoverflow.blog/2021/12/23/best-practices-for-writing-code-comments/)
 
 ## To-Read
-1. What Is Eat the Frog? A Dead Simple System for Productivity Minimalists
 7. Debouncing and Throttling Explained Through Examples
 4. [javascript - Reactjs separation of UI and business logic - Stack Overflow](https://stackoverflow.com/questions/69332889/reactjs-separation-of-ui-and-business-logic)
 4. [javascript - Do DOM tree elements with IDs become global properties? - Stack Overflow ](https://stackoverflow.com/questions/3434278/do-dom-tree-elements-with-ids-become-global-properties)
 4. ["Simple Made Easy" - Rich Hickey (2011) - YouTube](https://www.youtube.com/watch?v=LKtk3HCgTa8)
 3. [Using classes - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_classes)
+
+## Books 
+### On writing
+Three books that I found indispensable to my writing journey. They are not
+arranged in order of importance; I found them equal importance. 
+
+- *The Elements of Style* by William Strunk Jr, 
+- *On Writing Well* by William Zinsser
+- *Bird by Bird* by Anne Lamott
+### On programming
+- *JavaScript: The Good Parts* by Douglas Crockford
+- *The C programming language* Brian W. Kernighan , Dennis M. Ritchie
+- *Computer Systems A programmers perspective* by Randal E. Bryant David R.
+OHallaron.
+- *The Linux Programming Interface: A Linux and UNIX System Programming Handbook* by Michael Kerrisk
+- *UNIX Power Tools* by Jerry Peek, Tim O'Reilly, Mike Loukides
+- *UNIX and Linux System Administration Handbook* by Evil Nemeth et al.
+
+### Literature 
+- Letters to a Young Poet Rainer Maria Rilke
+- Notes from Underground Fyodor Dostoevsky
+- Crime and Punishment Novel by Fyodor Dostoevsky
+- The War of Art: Break Through the Blocks and Win Your Inner Creative Battles by Steven Pressfield 
+- the brothers karamazov by Fyodor Dostoevsky
+- Niels Lyhne by Jens Peter Jacobsen
+- Thus Spoke Zarathustra by Friedrich Nietzsche
 
 <!-- 7. [Andrej Karpathy](https://karpathy.ai/) - He has a good page created using github pages. I even love the video where he told us how his productive day looks like on [Lex Clip](https://www.youtube.com/watch?v=iu3LJY8N_9s) -->
 <!-- 9. Psychiatrist on Burnt out student [YT] -->
